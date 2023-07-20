@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested list in html and css designing</title>
+    <style>
+        h1{
+            font-size: 70px;
+            text-align: center;
+            border-bottom: 3px solid black;
+            text-shadow: 4px 5px skyblue;
+
+        }
+        ol li{
+            font-size: 30px;
+            color: green;
+        }
+        ol ol li{
+            color: sandybrown;
+        }
+        ol ol ul li{
+            list-style-type: disc;
+            color: blueviolet;
+        }
+        ol ol ul ul li{
+            list-style-type:circle;
+            color: brown;
+        }
+        ol ol ul ul ul li{
+            list-style-type:square;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Nested list in HTML</h1>
+    <ol>
+        <li>Input Devices</li>
+        <ol type="a">
+            <li>Pointing Devices</li>
+            <ul>
+                <li>Mouse</li>
+                <ul>
+                    <li>optical mouse</li>
+                    <li>mechanical mouse</li>
+                    <li>wireless</li>
+                    <ul>
+                        <li>RF Mouse</li>
+                        <li>Bluetooth mouse</li>
+                    </ul>
+                </ul>
+                <li>TrackBall</li>
+                <li>TouchPad</li>
+                <li>Pointing stick</li>
+            </ul>
+            <li>Touch Screen</li>
+            <li>Video Input and Audio Input Devices</li>
+            <ul>
+                <li>Digital video camera</li>
+                <li>Web Cams</li>
+            </ul>
+        </ol>
+        <li>Output Devices</li>
+        <ol type="a">
+            <li>monitor</li>
+            <li>printer</li>
+            <ul>
+                <li>impact printer</li>
+                <li>non-impact printer</li>
+            </ul>
+        </ol>
+    </ol>
+
+</body>
+</html>
