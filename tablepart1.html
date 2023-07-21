@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in html</title>
+
+    <style>
+
+        table , th , td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            background-color: red;
+            color: white;
+        }
+
+        td{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        table ==> this is container 
+
+            thead ==> this is also container 
+                    tr ==> table row 
+                        th ==> table head 
+          
+ <table>
+
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+
+</table>
+
+
+            tbody ==> this is also container 
+
+                tr ==> table row
+                    td ==> table data
+    -->
+    <h1>Horizontal table</h1>
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2">S.N.</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Class</th>
+                <th colspan="3">Subject</th>
+               
+            </tr>
+
+            <tr>
+                
+                <th>Hindi</th>
+                <th>English</th>
+                <th>Math</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Ravi</td>
+                <td>12th</td>
+                <td>86</td>
+                <td>75</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Sahil</td>
+                <td>12th</td>
+                <td>75</td>
+                <td>45</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Manish</td>
+                <td>12th</td>
+                <td>68</td>
+                <td>57</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Ashok</td>
+                <td>12th</td>
+                <td>60</td>
+                <td>50</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Lalit</td>
+                <td>12th</td>
+                <td>56</td>
+                <td>75</td>
+                <td>78</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Vertical Table</h1>
+    <table>
+        <tbody>
+
+            <tr>
+                <th>S.N.</th>
+                <td>1.</td>
+                <td>2.</td>
+                <td>3.</td>
+                <td>4.</td>
+                <td>5.</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>Ravi</td>
+                <td>Sahil</td>
+                <td>Manish</td>
+                <td>Ashok</td>
+                <td>Lalit</td>
+            </tr>
+            <tr>
+                <th>Class</th>
+                <td>12th</td>
+                <td>12th</td>
+                <td>12th</td>
+                <td>12th</td>
+                <td>12th</td>
+          
+            </tr>
+            <tr>
+                <th>Hindi</th>
+                <td>78</td>
+                <td>45</td>
+                <td>78</td>
+                <td>85</td>
+                <td>100</td>
+          
+            </tr>
+            <tr>
+                <th>English</th>
+                <td>78</td>
+                <td>45</td>
+                <td>78</td>
+                <td>85</td>
+                <td>100</td>
+          
+            </tr>
+            <tr>
+                <th>Math</th>
+                <td>78</td>
+                <td>45</td>
+                <td>78</td>
+                <td>85</td>
+                <td>100</td>
+          
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
