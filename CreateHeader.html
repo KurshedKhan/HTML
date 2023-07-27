@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create a Header </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .HeadPart {
+            border: 1px solid Black;
+            height: 60px;
+            background-color: #0A6EBD;
+            color: white;
+            box-shadow:3px 3px 5px  black;
+        }
+
+        .d-flex{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul li{
+            list-style-type: none;
+            margin: 0px 10px;
+            font-size: large;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        ul li:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .img-1{
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="HeadPart d-flex">
+        <div>
+            <img  class="img-1" src="carlogo.png" alt="car logo image" width="45px">
+        </div>
+
+        <div>
+            <ul class="d-flex">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+    <img src="natureimage2.jpg" alt="Nature Image " width="100%" height="500px">
+</body>
+
+</html>
