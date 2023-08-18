@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Complicated table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 4px solid black;
+            height: 30px;
+            widtd: 50vh;
+        }
+        .rowfirst td{
+            background-color: red;
+        }
+        .rowsecond td{
+            background-color: goldenrod;
+        }
+        .rowtdird td{
+            background-color: yellow;
+        }
+        .rowfourtd td{
+            background-color: darkgreen;
+        }
+        .rowfivetd td{
+            background-color: skyblue;
+        }
+        .rowsixtd td{
+            background-color: rgba(39, 39, 185, 0.571);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Table 1 to 6</h1>
+    <table>
+        <tbody>
+            <tr class="rowfirst">
+                <td rowspan="3">1</td>
+                <td rowspan="2"></td>
+                <td colspan="2"></td>
+                <td rowspan="3"></td>
+                <td colspan="2"></td>
+                
+            </tr>
+            <tr class="rowsecond">
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+              
+              
+            </tr>
+            <tr class="rowtdird">
+                <td colspan="2">3</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3"></td>
+               
+               
+               
+            </tr>
+            <tr class="rowfourtd">
+                <td>4</td>
+                <td colspan="2"></td>
+                <td colspan="3"></td>
+              
+                
+            </tr>
+            <tr class="rowfivetd">
+                <td>5</td>
+                <td colspan="2"></td>
+                <td rowspan="2"></td>
+                <td colspan="2"></td>
+                
+            </tr>
+            <tr class="rowsixtd">
+                <td>5</td>
+                <td colspan="2"></td>
+                <td colspan="3"></td>
+                
+               
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
