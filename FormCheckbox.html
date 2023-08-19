@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Student Details and Radio Button</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+          
+        }
+
+        .container {
+            background-color: white;
+            border: 1px solid black;
+            width: 40%;
+            height: fit-content;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px 1px black;
+            color: white;
+
+        }
+
+        .container-1 {
+            padding: 30px 10px;
+
+        }
+
+        .container-1:hover {
+            background-color: rgba(0, 0, 0, 0.658);
+
+        }
+
+        .container .toptext {
+            margin-top: 15px;
+            text-shadow: 2px 2px rgba(18, 18, 186, 0.304);
+            margin-bottom: 30px;
+
+        }
+
+        label {
+            font-size: xx-large;
+            margin-left: 20px;
+        }
+
+        .studentname {
+            margin: 10px 20px;
+            width: 80%;
+            padding: 10px 10px;
+            border-radius: 10px;
+            font-size: large;
+            border: none;
+
+        }
+
+        .fathername {
+            margin: 10px 20px;
+            width: 80%;
+            padding: 10px 10px;
+            border-radius: 10px;
+            font-size: large;
+            border: none;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: large;
+
+        }
+
+        .button-1 {
+            margin-left: 20px;
+            margin-top: 30px;
+            width: 82.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input[type=radio] {
+            border: 0px;
+            width: 100%;
+            height: 2em;
+
+        }
+
+        .radio {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+
+        }
+
+        .submit a {
+            text-decoration: none;
+        }
+
+        .checkbox {
+            margin-left: 20px;
+            font-size: x-large;
+        }
+
+        #checkbox {
+            margin-top: 10px;
+            margin-right: 10px;
+            height: 20px;
+            width: 20px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-1">
+            <h1 align="center" class="toptext">Student Details with Multiple selection</h1>
+
+            <form action="">
+
+                <!--Student Name label and Input -->
+                <div style="margin-top: 20px;">
+                    <H2><label for="studentname">Student Name</label><br></H2>
+                    <input type="text" id="studentname" class="studentname" placeholder="Enter your name...">
+                </div>
+
+                <!--Father Name label and Input-->
+                <div style="margin-top: 30px;">
+                    <H2> <label for="fathername">Father's Name</label><br></H2>
+                    <input type="text" id="fathername" class="fathername" placeholder="Enter your father name...">
+
+                </div>
+                <!--Gender Male and Female label and Input-->
+                <div style="margin-top: 30px;">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="male" value="male"
+                        style="height:30px; width:30px; vertical-align: top;">
+
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="male" value="female"
+                        style="height:30px; width:30px; vertical-align:top;">
+
+                </div>
+                <div class="checkbox">
+                    <h3 style="margin-top: 30px;">Select Medium</h3>
+                    <ul style="list-style-type: none;">
+                        <li><input type="checkbox" name="checkbox" id="checkbox" value="Hindi">Hindi</li>
+                        <li><input type="checkbox" name="checkbox" id="checkbox" value="English">English</li>
+
+                    </ul>
+                </div>
+                
+                <!--Button Submit and Next-->
+                <div class="button-1">
+                    <div>
+                        <button type="submit" value="submit">Submit</button>
+                    </div>
+                    <div>
+                        <button type="submit" value="next" class="submit"> <a
+                                href="FormRadio.html">Previous</a></button>
+
+                        <button type="submit" value="next"><a href="FormSelectionbox.html"      style="text-decoration: none;">Next</a></button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
