@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list card in HTML and CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .card{
+            border: 1px solid black;
+            width:300px;
+            margin: 40px;
+        }
+        h1{
+            text-align: center;
+            padding: 10px 0px;
+            background-color: orangered;
+            color: white;
+        }
+        li{
+            list-style-type: none;
+            margin: 10px 0px;
+            
+            font-size:xx-large;
+            padding: 3px 0px;
+        }
+        .alternate-bg{
+            background-color: rgba(128, 128, 128, 0.158);
+        }
+        .border-bottom{
+            border: 2px solid red;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Ordered List</h1>
+        <ol>
+            <li>1.HTML</li>
+            <li class="alternate-bg">2.CSS</li>
+            <li>3.JavaScript</li>
+            <li class="alternate-bg">4.Php</li>
+            <li>5.MySQL</li>
+            <li class="alternate-bg">6.Python</li>
+        </ol>
+        <div class="border-bottom"></div>
+    </div>
+    
+</body>
+</html>
