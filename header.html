@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create header part in html</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 3px 3px 5px black;
+            height: 80px;
+        }
+
+        .header1 img {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+        }
+
+        .header1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 0px;
+            width: 300px;
+        }
+
+        .header1 span {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .header2 ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: x-large;
+        }
+
+        .header2 {
+            width: 450px;
+
+        }
+
+        .header2 ul li {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .header2 ul li:hover {
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            transition: all 0.5s ease;
+            border-radius: 15px;
+        }
+
+        .home {
+            background-color: red;
+            color: white;
+        }
+        nav{
+           background-color: rgba(0, 0, 0, 0.712);
+           color: white;
+           box-sizing: border-box;
+           height: 50px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
+            font-size: large;
+            font-weight: bold;
+
+        }
+        nav ul li{
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul li:hover{
+            background-color: black;
+            cursor: pointer;
+            transition: all 0.8s ease;
+            
+        }
+        .active{
+            background-color:aqua !important ;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        aside{
+            width: 219px;
+            height: 82vh;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 30px;
+            font-size: x-large;
+            background-color: rgba(0, 0, 0, 0.545);
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        aside ul{
+            font-size: large;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <img src="food.jpeg" alt="food logo for our website">
+            <span>Different Food</span>
+        </div>
+        <div class="header2">
+            <ul>
+                <li class="home">Home</li>
+                <li>About Us</li>
+                <li>Gallery</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://html.com/">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li class="active"><a href="#">JavaScript</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">PhP</a></li>
+            <li><a href="#">How To</a></li>
+            <li><a href="#">W3.CSS</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">React</a></li>
+           
+        </ul>
+    </nav>
+
+    <aside>
+        <span><b>HTML Tutorial</b></span>
+
+        <ul>
+            <li>HTML Home</li>
+            <li>HTML Introduction</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+            <li>HTML Home</li>
+        </ul>
+    </aside>
+</body>
+
+</html>
