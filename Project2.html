@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and flex Property use project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0px;
+            width: 100%;
+            height: 60px;
+            background-color: #028d83;
+            color: white;
+
+
+        }
+
+        .header1 img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .header2 ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            
+
+        }
+
+        .header2 ul li {
+            padding: 10px;
+            border: 1px solid black;
+            color: white;
+
+        }
+
+        .header2 ul li:hover {
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .home {
+            background-color: red !important;
+            color: white !important;
+        }
+
+        .header2 {
+            width: 300px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+
+        .header1 {
+            width: 230px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
+        .header1 span {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .main-part img {
+            height: 550px;
+            width: 100%;
+        }
+
+        .main-part {
+            height: 700px;
+
+            position: relative;
+        }
+
+        .main-part-logo {
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 50px;
+            left: 40%;
+            overflow: hidden;
+            background-color: white;
+            padding: 10px;
+
+
+        }
+
+        .main-border1 {
+            border: 1px solid black;
+        }
+
+        .main-part-logo1 {
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 50px;
+            left: 10%;
+            overflow: hidden;
+            background-color: white;
+            padding: 10px;
+
+        }
+
+        .main-part-logo2 {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 50px;
+            right: 10%;
+            overflow: hidden;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+
+        }
+
+        .main-part-logo img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .main-part-logo1 img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .main-part-logo2 img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .span1 {
+
+            font-size: x-large;
+            font-weight: bold;
+            position: absolute;
+            left: 15%;
+            top: 95%;
+        }
+
+        .span2 {
+
+            font-size: x-large;
+            font-weight: bold;
+            position: absolute;
+            left: 45%;
+            top: 95%;
+        }
+
+        .span3 {
+
+            font-size: x-large;
+            font-weight: bold;
+            position: absolute;
+            left: 78%;
+            top: 95%;
+        }
+
+        .card-bg {
+
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .card1 {
+            box-shadow: 3px 3px 5px black;
+
+            width: 250px;
+            height: 380px;
+            overflow: hidden;
+
+            background-color: white;
+
+        }
+
+        .card1 img {
+
+            width: 250px;
+            height: 40%;
+        }
+
+        .card1 span {
+            font-size: large;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        hr {
+            border: 1px solid black;
+            background-color: black;
+            margin: 7px 7px;
+        }
+
+        .iconicon1 i {
+            margin-left: 5px;
+
+        }
+
+        h3 {
+            font-size: small;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 5px;
+
+        }
+
+        .icon span {
+            margin: 0px;
+        }
+
+        h1 {
+            border: 2px solid black;
+            font-size: large;
+            margin-left: 60px;
+            width: fit-content;
+            color: white;
+            background-color: rgba(248, 7, 99, 0.79);
+            padding: 5px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .card2 {
+            box-shadow: 3px 3px 5px black;
+
+            width: 250px;
+            height: 380px;
+            overflow: hidden;
+
+            background-color: white;
+
+        }
+
+        .card2 img {
+
+            width: 250px;
+            height: 40%;
+        }
+
+        .card2 span {
+            font-size: large;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        hr {
+            border: 1px solid black;
+            background-color: black;
+            margin: 7px 7px;
+        }
+
+        .iconicon1 i {
+            margin-left: 5px;
+
+        }
+
+        h3 {
+            font-size: small;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 5px;
+
+        }
+
+        .icon span {
+            margin: 0px;
+        }
+
+        h1 {
+            border: 2px solid black;
+            font-size: large;
+            margin-left: 60px;
+            width: fit-content;
+            color: white;
+            background-color: rgba(248, 7, 99, 0.79);
+            padding: 5px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .card3 {
+            box-shadow: 3px 3px 5px black;
+            width: 250px;
+            height: 380px;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .card3 img {
+
+            width: 250px;
+            height: 40%;
+        }
+
+        .card3 span {
+            font-size: large;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        hr {
+            border: 1px solid black;
+            background-color: black;
+            margin: 7px 7px;
+        }
+
+        .iconicon1 i {
+            margin-left: 5px;
+
+        }
+
+        h3 {
+            font-size: small;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 5px;
+
+        }
+
+        .icon span {
+            margin: 0px;
+        }
+
+        h1 {
+            border: 2px solid black;
+            font-size: large;
+            margin-left: 60px;
+            width: fit-content;
+            color: white;
+            background-color: rgba(248, 7, 99, 0.79);
+            padding: 5px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .mainfooter {
+
+            display: flex;
+            justify-content: space-around;
+            background-color: #1450A3;
+        }
+
+        .footer1 h2 {
+            font-weight: bold;
+            margin-left: 10%;
+            padding: 10px;
+        }
+
+        .footer2 {
+
+            width: 250px;
+        }
+
+        .mainfooter2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1450A3;
+
+        }
+
+        .links ul li {
+            line-height: 30px;
+        }
+
+        .icon-bottom {
+            margin-bottom: 10px;
+        }
+
+        .span {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 15px 0px;
+            color: white;
+        }
+
+        .mainfooter .bi {
+            color: white;
+        }
+
+        .sub {
+            margin: 40px 0px 20px 0px;
+            color: white;
+        }
+
+        .sub span {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .sub input {
+            border-bottom: #0067f7;
+            background-color: #1450A3;
+        }
+
+        .sub button {
+            width: 250px;
+            padding: 10px;
+            background-color: #0067f7;
+            border: #1450A3;
+            color: #64CCC5;
+        }
+
+        .cardbelow-inf1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cardbelow-inf1 img {
+            width: 250px;
+            height: 250px;
+            margin: 10px 20px;
+        }
+
+        .cardbelow-inf1 span {
+           
+            font-size: xx-large;
+            margin: 10px;
+        }
+
+        .cardbelow-inf2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cardbelow-inf2 img {
+            width: 250px;
+            height: 250px;
+            margin: 10px 20px;
+        }
+
+        .cardbelow-inf2 span {
+           
+            font-size: xx-large;
+            margin: 10px;
+        }
+
+        .cardbelow-inf3 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cardbelow-inf3 img {
+            width: 250px;
+            height: 250px;
+            margin: 10px 20px;
+        }
+
+        .cardbelow-inf3 span {
+           
+            font-size: xx-large;
+            margin: 10px;
+        }
+
+        nav ul li {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: 18px;
+            font-weight: bolder;
+            background-color: #05e2d3;
+        }
+
+        .nav-ul li:hover {
+            background-color: red;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            color: white;
+        }
+
+        .important1 {
+            background-color: red !important;
+        }
+
+        .aside-description {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .aside-information {
+            height: fit-content;
+            width: 100px;
+        }
+
+        aside {
+            width: 219px;
+            height: 86vh;
+            box-sizing: border-box;
+            line-height: 30px;
+            font-size: large;
+            background-color: #05e2d39e;
+            overflow: hidden;
+            overflow-y: scroll;
+
+        }
+        aside a{
+            display: block;
+          
+            padding: 2px 40px;
+            text-decoration: none;
+            color: black;
+        }
+        aside a:hover{
+            background-color: rgba(255, 0, 0, 0.596);
+            color:white;
+        }
+    
+        .d-flex{
+            display: flex;
+        }
+        .container-main{
+            height: 86vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <img src="headerlogo.jpg" alt="website logo">
+            <span>Food Delivery</span>
+        </div>
+        <div class="header2">
+            <ul>
+                <li class="home">Home</li>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>gallery</li>
+            </ul>
+        </div>
+
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-ul">
+            <li>China</li>
+            <li class="important1"><a href="#"></a>India</li>
+            <li><a href="#"></a>Spain</li>
+            <li><a href="#"></a>America</li>
+            <li><a href="#"></a>Russia</li>
+            <li><a href="#"></a>Poland</li>
+            <li><a href="#"></a>Turkey</li>
+            <li><a href="#"></a>Ukraine</li>
+            <li><a href="#"></a>Nepal</li>
+            <li><a href="#"></a>Srilanka</li>
+            <li><a href="#"></a>Bangladeh</li>
+
+        </ul>
+    </nav>
+
+    <div class="d-flex">
+        <!-- This container is aside bar and main section-->
+        <div>
+            <aside>
+                <h2 style="font-size: large;text-align:center;font-weight: bolder;">Food Desciption </h2>
+                
+                    <a href="#" class="important1">Pizza</a>
+                    <a href="#">Burger</a>
+                    <a href="#">Nooddels</a>
+                    <a href="#">Roll</a>
+                    <a href="#">Momos</a>
+                    <a href="#">Water-ball</a>
+                    <a href="#">Sahi Paner</a>
+                    <a href="#">Saag</a>
+                    <a href="#">Rice</a>
+                    <a href="#">Curd</a>
+                    <a href="#">Dosa</a>
+                    <a href="#">Rogan josh</a>
+                    <a href="#">Kulfi </a>
+                    <a href="#">Chicken 65</a>
+                    <a href="#">Gulab jamun</a>
+                    <a href="#">Pakora</a>
+                    <a href="#">Naan</a>
+                    <a href="#">Poha</a>
+                    <a href="#">Briyani</a>
+                    <a href="#">Chicken Roasted</a>
+                    <a href="#">Chicken Afgani</a>
+                    <a href="#">Chole Kulchee</a>
+                    <a href="#">Salad</a>
+                    <a href="#">Soup</a>
+                    <a href="#">Manchurion</a>
+                    <a href="#">Sandwhich</a>
+                    <a href="#">Patties</a>
+                    <a href="#">Paisterry</a>
+                    <a href="#">Desert</a>
+                    <a href="#">Contenetial</a>
+                    <a href="#">Idlli</a>
+                    <a href="#">Spring Roll</a>
+                    <a href="#">Hot Dog</a>
+                    <a href="#">Cake</a>
+                    <a href="#">Soft Drink</a>
+                    <a href="#">Chutneey</a>
+                    <a href="#">Pakora</a>
+                    <a href="#">Ras malai </a>
+                    <a href="#">Laddu</a>
+                    <a href="#">Pav Bhaji</a>
+                    <a href="#">Rajma</a>
+                    <a href="#">Choole</a>
+                    <a href="#">Curry</a>
+                    <a href="#">Mix Veg</a>
+                    <a href="#">Dum Aloo</a>
+                    <a href="#">Appam</a>
+                    <a href="#">Upma</a>
+                   
+                
+            </aside>
+        </div>
+        <section class="container-main">
+            <div class="main-part">
+                <img src="food2.jpg" alt="main food image all item">
+
+                <div class="main-part-logo">
+                    <img src="foodlogo2.svg" alt="">
+                </div>
+                <div class="main-part-logo1">
+                    <img src="foodimage1logo.svg" alt="">
+                </div>
+                <div class="main-part-logo2">
+                    <img src="foodimage2 logo (1).svg" alt="">
+                </div>
+
+                <span class="span1">Indian</span>
+                <span class="span2">Spanish</span>
+                <span class="span3">Chineese</span>
+            </div>
+            <div class="card-bg">
+                <div class="card1">
+                    <img src="card img.jpg" alt="card img1 indian food">
+                    <span>Strawberry Wafle</span>
+                    <hr>
+                    <div class="icon">
+                        <div class="icon1">
+                            <i class="bi bi-clock-history"></i>
+                            <span>20 <br>Minite</span>
+                        </div>
+                        <div class="icon2">
+                            <i class="bi bi-book"></i>
+                            <span>5 <br>ingredients</span>
+                        </div>
+                        <div class="icon3">
+                            <i class="bi bi-person"></i>
+                            <span>4-6 <br>serving</span>
+                        </div>
+                    </div>
+                    <h3>
+                        When spices start speaking.
+                        Enjoy the food we love.
+                        Try anything, imagine everything.
+                        Food from the heaven.
+                    </h3>
+                    <h1 style="margin-top:30px ;">View Reciepe</h1>
+                </div>
+                <div class="card2">
+                    <img src="cardimg2.jpg" alt="card img2 spanish food">
+                    <span>Strawberry Wafle</span>
+                    <hr>
+                    <div class="icon">
+                        <div class="icon1">
+                            <i class="bi bi-clock-history"></i>
+                            <span>20 <br>Minite</span>
+                        </div>
+                        <div class="icon2">
+                            <i class="bi bi-book"></i>
+                            <span>5 <br>ingredients</span>
+                        </div>
+                        <div class="icon3">
+                            <i class="bi bi-person"></i>
+                            <span>4-6 <br>serving</span>
+                        </div>
+                    </div>
+                    <h3>
+                        When spices start speaking.
+                        Enjoy the food we love.
+                        Try anything, imagine everything.
+                        Food from the heaven.
+                    </h3>
+                    <h1 style="margin-top:30px ;">View Reciepe</h1>
+                </div>
+
+                <div class="card3">
+                    <img src="cardimg3.jpg" alt="card img3 chineese food">
+                    <span>Strawberry Wafle</span>
+                    <hr>
+                    <div class="icon">
+                        <div class="icon1">
+                            <i class="bi bi-clock-history"></i>
+                            <span>20 <br>Minite</span>
+                        </div>
+                        <div class="icon2">
+                            <i class="bi bi-book"></i>
+                            <span>5 <br>ingredients</span>
+                        </div>
+                        <div class="icon3">
+                            <i class="bi bi-person"></i>
+                            <span>4-6 <br>serving</span>
+                        </div>
+                    </div>
+                    <h3>
+                        When spices start speaking.
+                        Enjoy the food we love.
+                        Try anything, imagine everything.
+                        Food from the heaven.
+                    </h3>
+                    <h1 style="margin-top:30px ;">View Reciepe</h1>
+                </div>
+
+            </div>
+            <div class="cardbelow-information">
+                <h2 style="margin: 5px 20px ;">Daal batti</h2>
+                <div class="cardbelow-inf1">
+                    <img src="dalbati.jpg" alt="card1 below information">
+                    <span>dal baati recipe | rajasthani dal bati churma | dal baati in appe pan with detailed photo and video recipe. a traditional rajasthani delicacy recipe made from dal, bati or wheat rolls and churma which is powdered wheat ball. it is generally served for lunch or dinner by mixing the dal with crushed baati and ghee topped on it. it is also popular in uttar pradesh and madhya pradesh within the malwa regions.</span>
+                </div>
+                <h2 style="margin-left: 86%; padding: 10px;">Spanish</h2>
+                <div class="cardbelow-inf2">
+                    <span>Spanish cuisine (Spanish: Cocina española) consists of the traditions and practices of Spanish cooking. It features considerable regional diversity, with important differences between the traditions of each part of Spain (see #Regional cuisines).
+
+                       </span>
+                    <img src="cardimg2.jpg" alt="card2 below information">
+                </div>
+                <h2 style="margin: 5px 20px ;padding: 10px;">Chineese</h2>
+                <div class="cardbelow-inf3">
+                    <img src="chinese.jpg" alt="card3 below information">
+                    <span>Chinese cuisine comprise cuisines originating from China. Because of the Chinese diaspora and historical power of the country, Chinese cuisine has profoundly influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce,</span>
+                </div>
+            </div>
+            <footer>
+                <div class="mainfooter">
+                    <div class="footer1">
+                        <div class="span">
+                            <span>Address</span>
+                        </div>
+                        <div>
+                            <ul style="color:  #64CCC5;">
+                                <div class="icon-bottom">
+                                    <i class="bi bi-geo-alt"></i><span> Location</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <i class="bi bi-telephone"></i><span> Call+01 1234567890</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <i class="bi bi-envelope"></i><span> mail@domain</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <div class="span">
+                                    <span>Links</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <span style="margin: 10px 0px;">Home</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <span>About</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <span>Services</span>
+                                </div>
+                                <div class="icon-bottom">
+                                    <span>Contact Us</span>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer2">
+                        <div style="font-weight: bold; margin: 20px 0px; font-size: x-large;">
+                            <span style="color: white;">Info</span>
+                        </div>
+                        <div>
+                            <span style="color: #64CCC5;"> Necessary making this the first true generator on the
+                                internet.
+                                it
+                                uses a dictionary of ovr 200
+                                latin words. combined with a handful.</span>
+                        </div>
+                        <div class="sub">
+                            <span>Subscribe</span><br> <br><br>
+                            <label for="email" style="color: #64CCC5;">Enter email</label>
+                            <div style="margin: 10px 0px; border-bottom: 2px solid #0067f7;"></div>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </section>
+    </div>
+</body>
+
+</html>
