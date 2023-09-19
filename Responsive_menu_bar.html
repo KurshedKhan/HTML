@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu bar in html and css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 30px;
+            line-height: 80px;
+            margin: 0px 50px;
+        }
+
+        header ul {
+            float: right;
+            line-height: 80px;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0px 20px;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .checkbtn {
+            display: none;
+            float: right;
+            line-height: 80px;
+        }
+
+        @media(max-width:800px) {
+            #check {
+                display:none;
+            }
+
+            .checkbtn {
+                display: block;
+            }
+            ul{
+                position: fixed;
+                background-color: cornflowerblue;
+                width: 100%;
+                height: 100vh;
+                right: 100%;
+                transition: 0.5s;
+                text-align: center;
+            }
+           
+            #check:checked ~ ul{
+                right: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <label for="check" class="checkbtn">
+            <i class="bi bi-list"></i>
+        </label>
+        <input type="checkbox" id="check">
+        <span class="logo">Web developer</span>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+        </ul>
+    </header>
+</body>
+
+</html>
