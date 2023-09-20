@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider menu bar in html and css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            border: 1px solid black;
+            width: 100%;
+            font-size: x-large;
+            background-color: green;
+            padding: 10px;
+        }
+        header ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+        }
+        header ul li{
+            padding: 10px;
+            background-color: rgba(73, 128, 0, 0.797);
+
+        }
+        header ul li:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        header ul li .hide-menu-bar{
+            display: none;
+        }
+        header ul li:hover .hide-menu-bar{
+            display: block;
+           position: absolute;
+           top: 57px;
+           left: 95px;
+        }
+        header ul li:hover .hide-menu-bar ul{
+            display: block;
+        }
+
+        .slider{
+            border: 1px solid black;
+            width: 100%;
+            height: 400px;
+            background-image: url(slider1.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: slider 9s infinite linear ;
+            box-shadow:3px 3px 5px black ;
+        }
+
+        @keyframes slider {
+            0%{
+                background-image: url(slider2.avif);
+            }
+            50%{
+                background-image: url(slider3.avif);
+            }
+            75%{
+                background-image: url(slider2.avif);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li style="background-color: red;color: white;">Home
+                <div class="hide-menu-bar">
+                    <ul>
+                        <li>Course</li>
+                        <li>Fees</li>
+                        <li>Syllbus</li>
+                        <li>Address</li>
+                    </ul>
+                </div>
+            </li>
+            <li>About us</li>
+            <li>Gallery</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>Blog</li>
+
+        </ul>
+    </header>
+    <div class="slider">
+
+    </div>
+</body>
+</html>
