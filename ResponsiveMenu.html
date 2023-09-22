@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive header with css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            border: 1px solid black;
+            width: 100%;
+            background-color: #12486B;
+            color: #F5FCCD;
+        }
+        header span{
+            font-size: xx-large;
+            margin: 0px 30px;
+            line-height: 80px;
+            font-weight: bold;
+        }
+        header ul{
+            float: right;
+            
+        }
+        header ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 20px;
+        }
+        #check{
+            display: none;
+        }
+        .checkbtn{
+            float: right;
+            line-height: 80px;
+            margin: 0px 10px;
+            display: none;
+        }
+
+        @media(max-width:858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                background-color: #419197;
+                width: 100%;
+                height: 100vh;
+                line-height: 80px;
+                right: 100%;
+                transition: 0.5s;
+            }
+            ul li:hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+            #check:checked ~ ul{
+                right: 0px;
+            }
+        }
+        img{
+            width: 100%;
+            height: 84vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <label for="check" class="checkbtn">
+            <i class="bi bi-list"></i>
+        </label>
+        <input type="checkbox" id="check">
+        <span>Khan_Bhaiya</span>
+        <ul>
+            <li>Home</li>
+            <li >About us</li>
+            <li>Gallery</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <img src="Natureimage1.avif" alt="Sun shine image">
+</body>
+</html>
