@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.d-flex{
+    display: flex;
+}
+.slider{
+    overflow: hidden;
+}
+.img-slider{
+   width: 20%;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+    overflow-x:hidden;
+}
+figure{
+    position: relative;
+    width: 500%;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider {
+    0%{
+        left:0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-100%;
+    }
+    35%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    55%{
+        left:-200%;
+    }
+    70%{
+        left:-300%;
+    }
+    85%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+
+
