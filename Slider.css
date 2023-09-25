@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-slider1{
+    width: 20%;
+    border: 1px solid black;
+    height:600px ;
+    background-image: url(RaviSlider5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-slider2{
+    width: 20%;
+    border: 1px solid black;
+    height:600px ;
+    background-image: url(RaviSlider4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-slider3{
+    width: 20%;
+    border: 1px solid black;
+    height:600px ;
+    background-image: url(RaviSlider1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-slider4{
+    width: 20%;
+    border: 1px solid black;
+    height:600px ;
+    background-image: url(RaviSlider2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-slider5{
+    width: 20%;
+    border: 1px solid black;
+    height:600px ;
+    background-image: url(RaviSlider3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.d-flex{
+    display: flex;
+}
+.slider{
+    overflow: hidden;
+}
+figure{
+    position: relative;
+    width: 500%;
+    animation: slider 15s infinite linear;
+}
+.img-slider img{
+    width: 100%;
+    height: fit-content;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    35%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    60%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    85%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+   
+}
