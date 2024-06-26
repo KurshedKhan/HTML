@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .spaced-text br {
+            line-height: 2em; /* Adds spacing after line breaks */
+        }
+        .colored-text::after {
+            content: '\A';
+            white-space: pre;
+            color: red; /* Changes color of pseudo-element */
+        }
+    </style>
+</head>
+<body>
+    <p class="spaced-text">
+        Line one<br>
+        Line two<br>
+        Line three
+    </p>
+    <p class="colored-text">
+        This line will be followed by a line break.
+    </p>
+
+    <q cite="https://www.google.com">The only way to do great work is to love what you do</q>
+    
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+    <abbr title="Cascading Style Sheet">CSS</abbr>
+</body>
+</html>
