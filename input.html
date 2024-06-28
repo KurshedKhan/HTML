@@ -6,19 +6,18 @@
     <title>Form Tag</title>
   </head>
   <body>
-    <form action="#">
+    <form action="https://html.com" method="post">
+      <fieldset>
+        <legend>Student Data</legend>
       <div>
         <label for="name">Name</label><br />
-        <input type="text" id="name" required/>
+        <input type="text" id="name" required placeholder="Enter your name" size="50"/>
       </div>
 
       <div>
         <label for="password">Password</label><br />
-        <input type="password" id="password" required/>
+        <input type="password" id="password" required placeholder="Enter your password" size="50"/>
       </div>
-
-
-
       <div>
         
         <label >Gender</label><br>
@@ -31,13 +30,23 @@
         <label for="female">Female</label>
 
       </div>
-
-
-
-
-
+      <label for="checkbox">Languages</label>
+      <input type="checkbox">Hindi
+      <input type="checkbox">English
+      <input type="checkbox">Urdu
       <br>
+      <textarea name="address" id="" cols="50" rows="10" placeholder="Enter your Address..."></textarea><br>
+      
+      <select name="language" id="">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript" selected>JavaScript</option>
+      </select><br>
+      <button type="button">Click</button>
       <input type="submit" value="login">
+      <input type="reset" value="Reset">
+
+    </fieldset>
     </form>
   </body>
 </html>
