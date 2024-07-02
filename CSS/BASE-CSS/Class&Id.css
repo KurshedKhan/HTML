@@ -1,0 +1,10 @@
+header{
+    border: 2px solid red;
+}
+.first{
+    color: yellow;
+    background-color: chocolate;
+}
+#main-header{
+    text-align: center;
+}
