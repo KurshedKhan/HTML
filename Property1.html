@@ -11,13 +11,17 @@
             box-sizing: border-box;
         }
         .text-box{
-           
-            background-color: #C70039;
+            font-family:'Times New Roman', Times, serif;
+            background-color: brown;
             color: white;
             padding: 20px;
             text-align: center;
+            line-height:1.5;
+            display: flex;
+            justify-content: space-between;
            
         }
+       
         .Container{
             height: 450px;
             background-image: url("image3.avif");
@@ -36,6 +40,17 @@
             width: 400px;
             text-align: justify;
         }
+        .text-box .menu-bar{
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+        }
+        .text-box .menu-bar li a{
+            text-decoration: none;
+            color: white;
+        }
         .Container2{
             height: 450px;
             padding: 100px 50px;
@@ -44,20 +59,30 @@
         .Container2 button{
             padding: 10px 30px;
             margin-top: 30px;
+            font-weight:bold;
+        }
+        .Container button a{
+            text-decoration:none;
         }
     </style>
 </head>
 <body>
     <div class="text-box">
         <h1>Tech Innovation</h1>
+        <ul class="menu-bar">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
     </div>
     <div class="Container">
         <div class="Container2">
             <h1>Tech <br> Innovation</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, veritatis. Eaque architecto, ut et obcaecati deleniti excepturi? Odio amet harum fuga ea quasi, explicabo omnis ipsa molestiae recusandae optio molestias hic quas obcaecati suscipit deserunt distinctio ipsum dolores expedita soluta.</p>
-            <button type="button">Read more...</button>
+            <button type="button"><a href="https://www.google.com">Read more...</a></button>
         </div>
-
     </div>
 </body>
 </html>
