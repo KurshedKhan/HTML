@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+        header{
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            height: 10vh;
+        }
+        .Section-Container{
+            display: flex;
+            height:80vh;
+        }
+        aside{
+            background-color: red;
+        }
+        .aside-section-grow{
+            flex-grow: 4;
+        }
+        .right-side-seciton{
+            background-color: blue;
+            color: white;
+            flex-grow: 5;
+            
+        }
+        .first-section{
+            height: 45%;
+            margin: 10px;
+            background-color: yellow;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+        .second-section{
+            height: 45%;
+            margin: 10px;
+            display: flex;
+            
+        }
+        .second-mini-section{
+            width: 400px;
+            padding: 50px;
+            background-color: skyblue;
+            flex-grow: 1;
+        }
+        .second-mini{
+            margin-right: 10px;
+        }
+        footer{
+            background-color:black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            height: 10vh;
+        }
+        .box-first-section{
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header Part
+    </header>
+    <section class="Section-Container">
+        <aside class="aside-section-grow">
+           
+        </aside>
+        <section class="right-side-seciton aside-section-grow">
+            <div class="first-section">
+                <div class="box-first-section"></div>
+                <div class="box-first-section"></div>
+                <div class="box-first-section"></div>
+            </div>
+            <div class="second-section">
+                <div class="second-mini-section second-mini">
+
+                </div>
+                <div class="second-mini-section">
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
