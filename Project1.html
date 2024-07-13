@@ -4,201 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property in css</title>
+    <link rel="stylesheet" href="Project1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .text-box{
-            font-family:'Times New Roman', Times, serif;
-            color: black;
-            padding: 20px;
-            text-align: center;
-            line-height:1.5;
-            display: flex;
-            justify-content: space-between;
-           
-        }
-       .website-text-logo{
-        display: flex;
-        width: 160px;
-        justify-content: space-between;
-        align-items: center;
-       }
-       .website-text-logo img{
-        width: 60px;
-       }
-        .Container{
-            height: 450px;
-            background-image: url("Text-Container-images1.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            
-        }
-        .Container h1{
-            color: white;
-            font-size: 50px;
-        }
-        .Container p{
-            margin-top: 10px;
-            color: white;
-            width: 400px;
-            text-align: justify;
-        }
-        .text-box .menu-bar{
-            display: flex;
-            width: 400px;
-            justify-content: space-between;
-            align-items: center;
-            list-style-type: none;
-        }
-        .text-box .menu-bar li a{
-            text-decoration: none;
-            color: black;
-        }
-        .Container2{
-            height: 450px;
-            padding: 100px 50px;
-            background-color: rgba(0, 0, 0, 0.728);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .Container2 div img{
-            width: 480px;
-        }
-        .Container2 button{
-            padding: 10px 30px;
-            margin-top: 30px;
-            font-weight:bold;
-        }
-        .Container button a{
-            text-decoration:none;
-        }
 
-       /*
-        Card CSS Start
-       */
-       .main-card-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 500px;
-       }
-       .Container-card{
-        height: 450px;
-        width: 300px;
-        overflow: hidden;
-        box-shadow: 3px 3px 19px black;
-        border-radius: 10px;
-        background-color: white;
-    }
-    .logo-icon-card{
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .logo-icon-card img{
-        height: 25px;
-    }
-    .logo-icon-card .bi-bag{
-        font-size: 25px;
-    }
-    .shoes-img-card img{
-        width: 300px;
-        filter: drop-shadow(12px 15px 4px rgba(0, 0, 0, 0.5));
-    }
-    .paint-img-card img{
-        width: 300px;
-        height: 200px;
-        filter: drop-shadow(12px 15px 4px rgba(0, 0, 0, 0.5));
-    }
-    .TShirt-img-card img{
-        width: 300px;
-        height: 200px;
-        filter: drop-shadow(12px 15px 4px rgba(0, 0, 0, 0.5));
-    }
-    
-    .card-text{
-        padding: 10px;
-    }
-    .card-text .span1{
-        font-weight: bold;
-        font-size: 15px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .card-text p{
-        font-size: small;
-    }
-    .card-text .bi-star-fill,.bi-star{
-        font-size: 12px;
-    }
-    .color-price-card{
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .blue-background-round{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: blue;
-    }
-    .red-background-round{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: red;
-    }
-    .yellow-background-round{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: yellow;
-    }
-    .color-round-card{
-        display: flex;
-        align-items: center;
-        width: 120px;
-        justify-content: space-between;
-        
-    }
-    .color-price-card div span{
-        font-size: 10px;
-    }
-    .buy-button-card{
-        padding: 10px;
-        background-image: linear-gradient(to right, rgba(0, 0, 255, 0.53), rgba(128, 0, 128, 0.493));
-        font-size: 20px;
-        font-weight: bold;
-        border-radius: 40px;
-        text-align: center;
-        color: white;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: 10px;
-    }
-       /*
-        Card CSS end
-       */
-    </style>
 </head>
 <body>
+    <div class="social-media-container">
+        <div>
+            <i class="bi bi-envelope-at-fill"></i>
+            <span>adidas@gmail.com</span>
+        </div>
+        <div class="sm-icon">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-snapchat"></i></a>
+        </div>
+    </div>
     <div class="text-box">
        <div class="website-text-logo">
         <img src="Adidas-Logo.png" alt="website-logo-img">
         <h1><i></i></h1>
        </div>
+       <div class="searchBox">
+            <input type="text" placeholder="Search">
+            <i class="bi bi-search"></i>
+       </div>
         <ul class="menu-bar">
-            <li><a href=""><i class="bi bi-house"></i> Home</a></li>
-            <li><a href=""><i class="bi bi-file-earmark-person-fill"></i> About</a></li>
-            <li><a href=""><i class="bi bi-telephone-fill"></i> Contact</a></li>
-            <li><a href=""><i class="bi bi-database"></i> Service</a></li>
-            <li><a href=""><i class="bi bi-person-circle"></i> Login</a></li>
+            <li><a href="#"><i class="bi bi-house"></i> Home</a></li>
+            <li><a href="#"><i class="bi bi-file-earmark-person-fill"></i> About</a></li>
+            <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
+            <li><a href="#"><i class="bi bi-database"></i> Service</a></li>
+            <li><a href="#"><i class="bi bi-person-circle"></i> Login</a></li>
         </ul>
     </div>
     <div class="Container">
@@ -291,6 +130,13 @@
                     Buy Now
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="staff-container">
+        <div class="staff-container-blur">
+            <img class="" src="" alt="">
+            <img class="" src="" alt="">
+            <img class="" src="" alt="">
         </div>
     </div>
 </body>

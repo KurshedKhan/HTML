@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.social-media-container{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071952;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.sm-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    width: 230px;
+    color: white;
+}
+.sm-icon a{
+    text-decoration: none;
+    color: white;
+}
+.bi-envelope-at-fill{
+    color: white;
+    font-size: 20px;
+}
+
+.text-box {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.website-text-logo {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBox {
+    border: 2px solid rgba(128, 128, 128, 0.66);
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 17px;
+    border-radius: 20px;
+}
+
+.searchBox input {
+    width: 500px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+
+.searchBox .bi-search {
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.66);
+}
+
+.website-text-logo img {
+    width: 60px;
+}
+
+.Container {
+    height: 450px;
+    background-image: url("Text-Container-images1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.Container h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.Container p {
+    margin-top: 10px;
+    color: white;
+    width: 400px;
+    text-align: justify;
+}
+
+.text-box .menu-bar {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.text-box .menu-bar li a {
+    text-decoration: none;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.text-box .menu-bar li a:hover {
+    background-color: #071952;
+    color: white;
+}
+
+.Container2 {
+    height: 450px;
+    padding: 100px 50px;
+    background-color: rgba(0, 0, 0, 0.728);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Container2 div img {
+    width: 480px;
+}
+
+.Container2 button {
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.Container button a {
+    text-decoration: none;
+}
+
+/*
+Card CSS Start
+*/
+.main-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.Container-card {
+    height: 450px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 3px 3px 19px black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Container-card:hover {
+    background-color: ;
+}
+
+.logo-icon-card {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-icon-card img {
+    height: 25px;
+}
+
+.logo-icon-card .bi-bag {
+    font-size: 25px;
+}
+
+.shoes-img-card img {
+    width: 300px;
+}
+
+.paint-img-card img {
+    width: 300px;
+    height: 200px;
+}
+
+.TShirt-img-card img {
+    width: 300px;
+    height: 200px;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.card-text .span1 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-text p {
+    font-size: small;
+}
+
+.card-text .bi-star-fill,
+.bi-star {
+    font-size: 12px;
+}
+
+.color-price-card {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue-background-round {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.red-background-round {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.yellow-background-round {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.color-round-card {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: space-between;
+
+}
+
+.color-price-card div span {
+    font-size: 10px;
+}
+
+.buy-button-card {
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.53), rgba(128, 0, 128, 0.493));
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+/*
+Card CSS end
+*/
+
+.staff-container{
+    border: 2px solid red;
+    height: 400px;
+    background-image: url("office-meeting-190912.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.staff-container-blur{
+    height:400px;
+    background-color: rgba(0, 0, 0, 0.743);
+}
