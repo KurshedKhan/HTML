@@ -1,143 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property in css</title>
-    <link rel="stylesheet" href="Project1.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="Project1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="social-media-container">
-        <div>
-            <i class="bi bi-envelope-at-fill"></i>
-            <span>adidas@gmail.com</span>
-        </div>
-        <div class="sm-icon">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-snapchat"></i></a>
-        </div>
+      <div>
+        <i class="bi bi-envelope-at-fill"></i>
+        <span>adidas@gmail.com</span>
+      </div>
+      <div class="sm-icon">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-snapchat"></i></a>
+      </div>
     </div>
     <div class="text-box">
-       <div class="website-text-logo">
-        <img src="Adidas-Logo.png" alt="website-logo-img">
+      <div class="website-text-logo">
+        <img src="Adidas-Logo.png" alt="website-logo-img" />
         <h1><i></i></h1>
-       </div>
-       <div class="searchBox">
-            <input type="text" placeholder="Search">
-            <i class="bi bi-search"></i>
-       </div>
-        <ul class="menu-bar">
-            <li><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li><a href="#"><i class="bi bi-file-earmark-person-fill"></i> About</a></li>
-            <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
-            <li><a href="#"><i class="bi bi-database"></i> Service</a></li>
-            <li><a href="#"><i class="bi bi-person-circle"></i> Login</a></li>
-        </ul>
+      </div>
+      <div class="searchBox">
+        <input type="text" placeholder="Search" />
+        <i class="bi bi-search"></i>
+      </div>
+      <ul class="menu-bar">
+        <li>
+          <a href="#"><i class="bi bi-house"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="bi bi-file-earmark-person-fill"></i> About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-telephone-fill"></i> Contact
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Manager(Mr. Bhavesh)</a></li>
+            <li><a class="dropdown-item" href="#">+91 8302881227</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Opening Time : 24/7</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-database"></i> Service
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">FlipKart</a></li>
+            <li><a class="dropdown-item" href="#">Amazon</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Quick and Fast Service</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="SignUP.html" target="_blank"><i class="bi bi-person-circle"></i> SignUp</a>
+        </li>
+      </ul>
     </div>
     <div class="Container">
-        <div class="Container2">
-            <div>
-                <h1>Adidas <br></h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, veritatis. Eaque architecto, ut et obcaecati deleniti excepturi? Odio amet harum fuga ea quasi, explicabo omnis ipsa molestiae recusandae optio molestias hic quas obcaecati suscipit deserunt distinctio ipsum dolores expedita soluta.</p>
-                <button type="button"><a href="https://www.google.com">Read more...</a></button>
-            </div>
-            <div>
-                <img src="images-removebg-preview.png" alt="container-images">
-            </div>
-        </div>       
+      <div class="Container2">
+        <div>
+          <h1>Adidas <br /></h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores,
+            veritatis. Eaque architecto, ut et obcaecati deleniti excepturi?
+            Odio amet harum fuga ea quasi, explicabo omnis ipsa molestiae
+            recusandae optio molestias hic quas obcaecati suscipit deserunt
+            distinctio ipsum dolores expedita soluta.
+          </p>
+          <button type="button">
+            <a href="https://www.google.com">Read more...</a>
+          </button>
+        </div>
+        <div>
+          <img src="images-removebg-preview.png" alt="container-images" />
+        </div>
+      </div>
     </div>
     <div class="main-card-container">
-        <div class="Container-card">
-            <div class="logo-icon-card">
-                <img src="Adidas-Logo.png" alt="logo for card">
-                <i class="bi bi-bag"></i>
-            </div>
-            <div class="TShirt-img-card">
-                <img src="T-Shirt-removebg-preview.png" alt="">
-            </div>
-            <div class="card-text">
-                <span class="span1">ADDIDAS XL Size</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, natus.</p>
-                <div><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i></div>
-                <div class="color-price-card">
-                   <div class="color-round-card">
-                    <h3>Color :</h3>
-                    <div class="blue-background-round"></div>
-                    <div class="red-background-round"></div>
-                    <div class="yellow-background-round"></div>
-                   </div>
-                   <div><h3>$0.5.00</h3><span>Nine dollar only</span></div>
-                </div>
-                <div class="buy-button-card">
-                    Buy Now
-                </div>
-            </div>
+      <div class="Container-card">
+        <div class="logo-icon-card">
+          <img src="Adidas-Logo.png" alt="logo for card" />
+          <i class="bi bi-bag"></i>
         </div>
-        <div class="Container-card">
-            <div class="logo-icon-card">
-                <img src="Adidas-Logo.png" alt="logo for card">
-                <i class="bi bi-bag"></i>
-            </div>
-            <div class="paint-img-card">
-                <img src="adidas-originals.png" alt="">
-            </div>
-            <div class="card-text">
-                <span class="span1">ADDIDAS Black Trouser</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, natus.</p>
-                <div><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i></div>
-                <div class="color-price-card">
-                   <div class="color-round-card">
-                    <h3>Color :</h3>
-                    <div class="blue-background-round"></div>
-                    <div class="red-background-round"></div>
-                    <div class="yellow-background-round"></div>
-                   </div>
-                   <div><h3>$0.7.00</h3><span>Nine dollar only</span></div>
-                </div>
-                <div class="buy-button-card">
-                    Buy Now
-                </div>
-            </div>
+        <div class="TShirt-img-card">
+          <img src="T-Shirt-removebg-preview.png" alt="" />
         </div>
-        <div class="Container-card">
-            <div class="logo-icon-card">
-                <img src="Adidas-Logo.png" alt="logo for card">
-                <i class="bi bi-bag"></i>
+        <div class="card-text">
+          <span class="span1">ADDIDAS XL Size</span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+            natus.
+          </p>
+          <div>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="color-price-card">
+            <div class="color-round-card">
+              <h3>Color :</h3>
+              <div class="blue-background-round"></div>
+              <div class="red-background-round"></div>
+              <div class="yellow-background-round"></div>
             </div>
-            <div class="shoes-img-card">
-                <img src="shoes-img-removebg.png" alt="">
+            <div>
+              <h3>$0.5.00</h3>
+              <span>Nine dollar only</span>
             </div>
-            <div class="card-text">
-                <span class="span1">ADDIDAS GAZE ZX</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, natus.</p>
-                <div><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i></div>
-                <div class="color-price-card">
-                   <div class="color-round-card">
-                    <h3>Color :</h3>
-                    <div class="blue-background-round"></div>
-                    <div class="red-background-round"></div>
-                    <div class="yellow-background-round"></div>
-                   </div>
-                   <div><h3>$0.9.00</h3><span>Nine dollar only</span></div>
-                </div>
-                <div class="buy-button-card">
-                    Buy Now
-                </div>
-            </div>
+          </div>
+          <div class="buy-button-card">Buy Now</div>
         </div>
+      </div>
+      <div class="Container-card">
+        <div class="logo-icon-card">
+          <img src="Adidas-Logo.png" alt="logo for card" />
+          <i class="bi bi-bag"></i>
+        </div>
+        <div class="paint-img-card">
+          <img src="adidas-originals.png" alt="" />
+        </div>
+        <div class="card-text">
+          <span class="span1">ADDIDAS Black Trouser</span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+            natus.
+          </p>
+          <div>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="color-price-card">
+            <div class="color-round-card">
+              <h3>Color :</h3>
+              <div class="blue-background-round"></div>
+              <div class="red-background-round"></div>
+              <div class="yellow-background-round"></div>
+            </div>
+            <div>
+              <h3>$0.7.00</h3>
+              <span>Nine dollar only</span>
+            </div>
+          </div>
+          <div class="buy-button-card">Buy Now</div>
+        </div>
+      </div>
+      <div class="Container-card">
+        <div class="logo-icon-card">
+          <img src="Adidas-Logo.png" alt="logo for card" />
+          <i class="bi bi-bag"></i>
+        </div>
+        <div class="shoes-img-card">
+          <img src="shoes-img-removebg.png" alt="" />
+        </div>
+        <div class="card-text">
+          <span class="span1">ADDIDAS GAZE ZX</span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+            natus.
+          </p>
+          <div>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="color-price-card">
+            <div class="color-round-card">
+              <h3>Color :</h3>
+              <div class="blue-background-round"></div>
+              <div class="red-background-round"></div>
+              <div class="yellow-background-round"></div>
+            </div>
+            <div>
+              <h3>$0.9.00</h3>
+              <span>Nine dollar only</span>
+            </div>
+          </div>
+          <div class="buy-button-card">Buy Now</div>
+        </div>
+      </div>
     </div>
     <div class="staff-container">
-        <div class="staff-container-blur">
-            <img class="" src="" alt="">
-            <img class="" src="" alt="">
-            <img class="" src="" alt="">
+      <div class="staff-container-blur">
+        <div class="company-details-card-container">
+          <h1>Our Company :</h1>
+          <br />
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla
+            blanditiis minus quas sint perspiciatis rem ipsam nobis. Et,
+            voluptatem! Ratione maiores doloribus id sapiente error quia
+            voluptates, repudiandae velit sit, alias odit exercitationem in
+            fugit a officiis eius suscipit tempore quis, illo rerum! Sint cumque
+            soluta molestiae reiciendis dignissimos, amet ea ipsam fugiat quas
+            velit impedit, mollitia dolorum, natus sit minima asperiores cum
+            iure harum quam nemo incidunt repellendus veritatis. Aliquam,
+            laboriosam facere perferendis harum, accusamus quasi hic dicta
+            veniam corrupti quidem fuga, ex eaque minima provident. Maxime
+            consectetur est hic eum harum labore vel voluptatibus reiciendis,
+            ipsam nesciunt!
+          </div>
+          <button type="button">
+            <a href="https://www.google.com">Read more...</a>
+          </button>
         </div>
+        <div class="staff-card-adjustment">
+          <div class="staff-card">
+            <img src="staff-3.jpeg" alt="director image" />
+
+            <div class="staff-card-details">
+              John Mark <br />
+              <span>{ Director }</span>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="staff-21.jpeg" alt="Assistant image" />
+
+            <div class="staff-card-details">
+              Morina Meta <br />
+              <span>{ Assistant }</span>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="staff-1.jpeg" alt="CEO image" />
+
+            <div class="staff-card-details">
+              D.D. Silva <br />
+              <span>{ CEO }</span>
+            </div>
+          </div>
+          <div class="staff-card">
+            <img src="staff-4.jpeg" alt="Manager image" />
+
+            <div class="staff-card-details">
+              Alisa Haly <br />
+              <span>{ Manager }</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Adidas
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Tech Innovation,Gopalpura, Jaipur</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  adidas@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +91 7877800584 </p>
+                <p><i class="fas fa-print me-3"></i> + 91 8003492304 </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+            >adidas@gmail.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
 </html>
