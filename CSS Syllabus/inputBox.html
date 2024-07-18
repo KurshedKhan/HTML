@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Box</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      input[type="text"] {
+       
+        padding: 8px 3px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+      }
+      .search_Container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width:200px;
+        border-radius: 3px;
+        box-shadow: 3px 3px 10px black;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">User Name</label><br />
+      <div class="search_Container">
+        <i class="bi bi-search"></i>
+        <input type="text" id="username" placeholder="Searchbar..." />
+      </div>
+    </form>
+  </body>
+</html>

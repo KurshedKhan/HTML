@@ -1,0 +1,22 @@
+p{
+    color:white;
+}
+h1{
+  border: 2px solid  red;
+  background-image: url();
+}
+img{
+  border: 2px solid red;
+}
+.kittu{
+  border: 2px solid green;
+}
+.container{
+  background-color: red;
+}
+#menu{
+  border: 2px solid red;
+}
+#menu_bar{
+  background-color: green;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table style in html and css</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+        }
+        th,td{
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table thead th {
+            background-color: green;
+            color: white;
+        }
+        .ncolor{
+            background-color: purple;
+            color: white;
+        }
+        table tbody td{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Class</th>
+                <th rowspan="2">RollNo</th>
+                <th colspan="4">Subject</th>
+                
+            </tr>
+            <tr>
+                
+                <th>Hindi</th>
+                <th>English</th>
+                <th>Math</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ncolor">Vikash</td>
+                <td>12th</td>
+                <td>101</td>
+                <td>56</td>
+                <td>78</td>
+                <td>85</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td class="ncolor">Ajay</td>
+                <td>12th</td>
+                <td>101</td>
+                <td>56</td>
+                <td>78</td>
+                <td>85</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td class="ncolor">Gopal</td>
+                <td>12th</td>
+                <td>101</td>
+                <td>56</td>
+                <td>78</td>
+                <td>85</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td class="ncolor">Manish</td>
+                <td>12th</td>
+                <td>101</td>
+                <td>56</td>
+                <td>78</td>
+                <td>85</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td class="ncolor">Rohit</td>
+                <td>12th</td>
+                <td>101</td>
+                <td>56</td>
+                <td>78</td>
+                <td>85</td>
+                <td>130</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

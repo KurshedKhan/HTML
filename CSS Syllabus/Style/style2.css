@@ -1,0 +1,16 @@
+header{
+    border: 2px solid black;
+    padding: 10px;
+    font-family:'Times New Roman';
+    margin: 0px;
+    font: bold;
+    background-color: green;
+    color: aliceblue;
+    text-align: center;
+    font-size:xx-large;
+    box-sizing: border-box;
+}
+a img {
+width: 50px; 
+height: 50px;
+}

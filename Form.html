@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar</title>
+    <style>
+        input{
+            padding: 2px 10px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color:cornflowerblue;
+            color: white;
+            border-radius: 2px;
+        }
+        label{
+            color: white;
+        }
+        input[type="submit"]{
+            margin-top: 10px;
+            border: none;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .form_container{
+            padding: 30px 10px;
+            width: fit-content;
+            background-image: url(loginBackground.jpeg);
+            border-radius: 2px;
+            box-shadow: 3px 3px 10px black;
+        }
+    </style>
+  </head>
+  <body>
+   <div class="form_container">
+    <form action="">
+        <div>
+          <label for="username">User Name</label><br />
+          <input type="text" id="username" />
+        </div> <br>
+        <div>
+          <label for="password">Password</label><br />
+          <input type="password" id="password" />
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+   </div>
+  </body>
+</html>
