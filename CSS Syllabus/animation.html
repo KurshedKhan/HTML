@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in css</title>
+    <style>
+        .container{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: black;
+            animation-name: movement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes movement {
+            0%{
+                background-color: yellow;
+                top: 0;left: 25%;
+            }
+            50%{
+                background-color: violet;
+                top: 25%;left: 25%;
+
+            }
+            75%{
+                background-color: green;
+                top: 25%;left: 0;
+
+            }
+            100%{
+                background-color: pink;
+                top: 0;left: 0;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
