@@ -1,0 +1,35 @@
+ Tag : 
+	<h1> ==> opening tag
+	</h1> ==> closing tag
+	
+	
+	<h1> </h1>
+	
+	<p> </p>
+	
+	<h2> </h2>
+	
+Element :
+		Tag + content
+		opening tag
+		closing tag
+		content
+		<html> "text " </html>
+		
+		
+root element :
+	html element/tag
+
+
+head Element : 
+		Top part of web Browser.
+		<head>  </head>
+
+
+body Element : 
+		below part of head
+		<body> </body>
+
+
+Version of html : 
+		  == > html -> 5 version
