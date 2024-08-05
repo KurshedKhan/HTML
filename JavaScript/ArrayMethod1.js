@@ -74,3 +74,15 @@ console.log(myChildren);
 let mybabyChildren = myChildren.slice(2,5);
 console.log(mybabyChildren);
 console.log(myChildren);
+
+let SChildern = myChildren.sort();
+console.log(SChildern);
+
+let num = [10,57,25,100,50,47,47,63,69];
+console.log(num);
+let numSort = num.sort((a, b) => a - b);
+console.log(numSort);
+let reverseSort = numSort.reverse();
+console.log(reverseSort);
+
+
