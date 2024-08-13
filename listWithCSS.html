@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>List Design</title>
+    <style>
+        .ListContainer{
+            border: 2px solid red;
+            width: fit-content;
+            padding: 10px;
+            background-color: tan;
+        }
+        .ListContainer ul{
+            margin: 0;
+            padding-left: 0px;
+            list-style-position: inside;
+            list-style-image: url("ezgif.com-resize.gif");
+        }
+        .ListContainer ul li::marker{
+          font-size: 1.2em;
+        }
+        .ListContainer ul li{
+            padding: 5px 0px;
+        }
+        .ListContainer h1{
+            margin-bottom:5px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="ListContainer">
+        <h1>Color Name : </h1>
+        <ul>
+            <li style="background-color: red;">Red</li>
+            <li style="background-color: white;">White</li>
+            <li style="background-color: Blue;">Blue</li>
+            <li style="background-color: black;color:white;">Black</li>
+            <li style="background-color: Orange;">Orange</li>
+            <li style="background-color: yellow;">Yellow</li>
+            <li style="background-color: pink;">Pink</li>
+        </ul>
+    </div> 
+</body>
+</html>
