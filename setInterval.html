@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval function in js</title>
+</head>
+<body>
+
+    <p id="text"></p>
+    <button onclick="clearInterval(Mytime)">Stop</button>
+    <script>
+        let Mytime = setInterval(interval,1000);
+        function interval(){
+           document.getElementById("text").innerHTML += "<h1>Hi</h1>"
+        }
+       
+    </script>
+</body>
+</html>
