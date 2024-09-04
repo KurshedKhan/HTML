@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box in html</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         *{
             margin: 0;
             padding: 0;
         }
       li {
-        width: fit-content;
         padding: 5px 10px;
         margin: 5px;
-        height: fit-content;
         list-style-type: none;
         background-color: red;
         color: white;
@@ -21,19 +20,43 @@
       }
       .Container{
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
+        width: 480px;
+      }
+      .img-text{
+        width: 185px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .img-text img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+      }
+      .bigcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         box-shadow: 2px 2px 9px black;    
+        padding: 10px;
       }
     </style>
   </head>
   <body>
-        <ul class="Container">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Service</li>
-            <li>Log-In</li>
-        </ul>
+        <div class="bigcontainer">
+          <div class="img-text">
+            <img src="boy-img.jpg" alt="boy image">
+            <h1>Boy-Img</h1>
+          </div>
+          <ul class="Container">
+              <li><i class="bi bi-house-door"></i> Home</li>
+              <li><i class="bi bi-file-person"></i> About</li>
+              <li><i class="bi bi-person-lines-fill"></i> Contact</li>
+              <li><i class="bi bi-database-fill"></i> Service</li>
+              <li><i class="bi bi-person-circle"></i> Log-In</li>
+          </ul>
+        </div>
     </div>
   </body>
 </html>
