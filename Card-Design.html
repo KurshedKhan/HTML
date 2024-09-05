@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 350px;
+            height: 450px;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.441);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .container img{
+            width: 350px;
+        }
+        .container .tech span{
+            padding: 5px 5px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+        }
+        .text-container{
+            padding: 20px;
+        }
+        .tech-text{
+            margin-top:20px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container .text-container .logo-text img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .container .text-container .logo-text{
+            margin-top:20px ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 155px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="card-img.jpeg" alt="Technology image">
+        <div class="text-container">
+            <div class="tech">
+                <span>Technology</span>
+            </div>
+            <div class="tech-text">
+                <span>Why is the Tesla Cybertruck <br> designed the way it is?</span>
+            </div>
+            <div>
+                <p>An exploration into the truck's polaring design in so good.</p>
+            </div>
+            <div class="logo-text">
+                <img src="card-img.jpeg" alt="for logo design">
+                <span><b>Manpreet Singh</b><br>2h age</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
