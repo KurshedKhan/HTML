@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in html</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        td{
+            padding: 10px 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    
+            <tr>
+                <td colspan="4">Student Records</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Height</td>
+                <td>Bloodgroup</td>
+            </tr>
+      
+            <tr>
+                <td>Rajat</td>
+                <td>26</td>
+                <td>5.6</td>
+                <td rowspan="5">A+</td>
+            </tr>
+            <tr>
+                <td>Mohan</td>
+                <td>26</td>
+                <td rowspan="2">5.6</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3">Sohan</td>
+          
+            
+            </tr>
+            <tr>
+               
+                <td>5.6</td>
+            </tr>
+            <tr>
+                <td>Riya</td>
+                <td>26</td>
+                <td>5.6</td>
+            </tr>
+        
+    </table>
+</body>
+</html>

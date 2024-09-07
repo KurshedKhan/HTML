@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+        }
+
+        /* Merge cells as per the design */
+        .rowspan2 {
+            rowspan: 2;
+        }
+
+        .colspan2 {
+            colspan: 2;
+        }
+
+        .rowspan3 {
+            rowspan: 3;
+        }
+
+        .colspan3 {
+            colspan: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="rowspan2"></td>
+            <td class="colspan2"></td>
+            <td class="rowspan3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="colspan3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="colspan2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
