@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntroPart of JavaScript</title>
+    <title>To-Do List </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="ForLoop1.js"></script>
+    <div class="container">
+        <div class="todo-header">
+            <h2>ToDo List</h2>
+            <img src="gb-notebook.gif" alt="gb notebook">
+        </div>
+        <div class="todo-body">
+            <input type="text" placeholder="Add your task" id="todoText" class="todo-input">
+            <img src="plus-icon-png-image.png" alt="+" id="AddUpdateClick" onclick="CreateToDoData()">
+        </div>
+        <ul id="list-items" class="list-items">
+        </ul>
+    </div>
+
+    
+    <script src="app.js"></script>
 </body>
 </html>
