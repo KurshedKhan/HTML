@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in html and css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.373);
+            position: relative;
+            overflow: hidden;
+        }
+        .box1{
+            background-color: green;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top:-50px ;
+            left:-30px;
+            border-radius:50%;
+        }
+        .box2{
+            background-color: green;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top:-10px ;
+            left:-60px;
+            border-radius:50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

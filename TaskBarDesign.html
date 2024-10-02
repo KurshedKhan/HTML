@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Bar in html and CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .Container{
+            background-color: antiquewhite;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .weather-logo-design img{
+            height: 35px;
+        }
+        .weather-logo-design{
+            width: fit-content;
+            border-radius: 7px;
+        }
+        .weather-logo-design:hover{
+            background-color:rgba(255, 255, 255, 0.511);
+            cursor: pointer;
+        }
+        .search-icon{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 460px;
+        }
+        .window-icon img{
+            height: 27px;
+        }
+        .search-icon .search-bar{
+            padding: 7px 7px;
+            border-radius: 50px;
+            background-color: white;
+        }
+        .search-icon .search-bar:hover{
+            background-color: rgba(255, 255, 255, 0.511);
+        }
+        .search-icon .search-bar input[type="text"]{
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .search-bar img{
+            height: 12px;
+        }
+        .window-icon{
+            padding: 3px;
+            border-radius: 7px;
+        }
+        .window-icon:hover{
+            background-color: rgba(255, 255, 255, 0.511);
+        }
+        .switch-icon{
+            padding: 3px;
+            border-radius: 7px;
+
+        }
+        .switch-icon:hover{
+            background-color: rgba(255, 255, 255, 0.511);
+        }
+        .switch-icon img{
+            height: 27px;
+        }
+        .mini-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 650px;
+        }
+        .Time-Data-icon{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 230px;
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+        .TimeDate{
+            font-size: 15px;
+        }
+        .TimeDate .time{
+            display: flex;
+            justify-content: end;
+        }
+        .Time-Data-icon img{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+      <div class="mini-container">
+        <div class="weather-logo-design">
+            <img src="Weather-Img-png.png" alt="Weather images in taskbar">
+        </div>
+        <div class="search-icon">
+           <div class="window-icon">
+                <img src="logo-windows-11-icon.png" alt=" window icon images">
+           </div>
+            <div class="search-bar">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search">
+                <img src="micro-co.png" alt="micro co-pilote icon">
+                
+            </div>
+            <div class="switch-icon">
+              <img src="switch-icon-removebg-preview1.png" alt="Switch icon images">
+            </div>
+            <div class="switch-icon">
+              <img src="png-transparent-microsoft-teams-hd-logo-thumbnail-removebg-preview.png" alt="Switch icon images">
+            </div>
+            <div class="switch-icon">
+              <img src="file-Explorer-removebg-preview.png" alt="Switch icon images">
+            </div>
+            <div class="switch-icon">
+              <img src="png-transparent-microsoft-edge-hd-logo-thumbnail-removebg-preview.png" alt="Switch icon images">
+            </div>
+        </div>
+        
+      </div>
+      <div class="Time-Data-icon">
+        <i class="bi bi-wifi"></i>
+        <i class="bi bi-volume-up"></i>
+        <i class="bi bi-battery-half"></i>
+        <div class="TimeDate">
+            <span class="time">08:30</span>
+            <span>10-09-2024</span>
+        </div>
+        <i class="bi bi-bell-fill"></i>
+        <img src="OIP-removebg-preview.png" alt="copilot pre remove">
+    </div>
+    </div>
+</body>
+</html>
