@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+      input[type="text"],input[type="password"] {
+        outline: none;
+        padding: 5px 5px;
+      }
+      label{
+        position: relative;
+        top: 8px;
+        left: 4px;
+        background-color: white;
+        padding: 0px 3px;
+      }
+      button{
+        border: none;
+        padding: 5px;
+        background-color: green;
+        color: white;
+        border-radius: 3px;
+      }
+      form{
+        width: fit-content;
+        padding: 10px;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+      }
+      h2{
+        position: relative;
+        top: -24px;
+        left: 65px;
+        background-color: white;
+        width: fit-content;
+        padding: 4px 7px;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.25);
+        font-size: 16px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+        <h2>login</h2>
+      <div>
+        <label for="user">User</label><br/>
+        <input type="text" id="user" value="User Name" size="20"/>
+      </div><br/>
+      <br>
+
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+      <div>
+        <label for="password">Password</label><br/>
+        <input type="password" id="password" />
+      </div><br/>
+      <label for="">Gender</label><br><br>
+      <input type="radio" name="Gender">Male
+      <input type="radio" name="Gender">Female
+      <input type="radio" name="Gender">Other
+      <textarea name="" id="" rows="" cols=""></textarea>
+      <button type="submit">Submit</button><br>
+
+
+      <select name="languages" id="">
+        <option value="Hindi">Hindi</option>
+        <option value="Gujrati" selected>Gujrati</option>
+        <optgroup label="Sub Language">
+          <option value="English">Normal English</option>
+          <option value="English">British English</option>
+          <option value="English">American English</option>
+        </optgroup>
+        <option value="Urdu">Urdu</option>
+        <option value="Marwari">Marwari</option>
+      </select>
+    </form>
+  </body>
+</html>

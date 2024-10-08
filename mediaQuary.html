@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query in css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 20px;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.518);
+        }
+        .img-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+        }
+        .img-text img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .menuBar ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+        
+        }
+        .menuIcon{
+            display: none;
+        }
+        @media screen and (max-width:576px) {
+            header{
+                background-color: #ff00ff;
+            }
+            .menuBar{
+                display: none;
+            }
+            .menuIcon{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="img-text">
+            <img src="boy-img.jpg" alt="cute boy image ">
+            <h1>Boy-Img</h1>
+        </div>
+        <div class="menuBar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Log-in</li>
+            </ul>
+        </div>
+        <div class="menuIcon">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+</body>
+</html>

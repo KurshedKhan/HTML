@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 100vh;
+        }
+        .container{
+            width: 7em;
+            height: 7em;
+            background-color: #ff0000;
+            transition:width 2s, height 2s,transform 2s,font-size 2s;
+            box-shadow:1px 1px 9px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        
+        }
+        .container:hover{
+            height: 15em;
+            width:15em ;
+            transform: rotate(360deg);
+            font-size: 6em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        2D rotate
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max and Min width</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%
+        }
+        .mix-max{
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+            background-color: pink;
+            width: 100%;
+        }
+        @media screen and (max-width : 576px) {
+            .mix-max{
+                color: white;
+                border: 2px solid white;
+                font-size: 0.5em;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+         <!-- Media Queries-->
+        <div class="mix-max">
+            <h1>Header</h1>
+        </div> 
+        <div class="mix-max">
+            <h1>Footer</h1>
+        </div> 
+
+   </div>
+</body>
+</html>
