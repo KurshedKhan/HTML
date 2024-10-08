@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,4 +73,80 @@
         </ul>
     </header>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar in css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: lightgray;
+
+
+        }
+        header ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header ul li{
+            width: 100%;
+            padding: 0.7em;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        header ul li:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        .menubar{
+            display:none;
+            position: absolute;
+            top: 2.4em;
+            width: 20%;
+            background-color:lightgray;
+            color: black;
+            border-radius: 0px 0px 10px 10px;
+        }
+        .activeRadius:hover{
+            border-radius: 0px 0px 10px 10px;
+        }
+        header>ul>li:hover .menubar{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home <i class="fa-solid fa-caret-down"></i></li>
+            <li>About <i class="fa-solid fa-caret-down"></i>
+                    <ul class="menubar">
+                        <li>Manish Kumar</li>
+                        <li>Manish Kumar</li>
+                        <li>Manish Kumar</li>
+                        <li>Manish Kumar</li>
+                        <li>Manish Kumar</li>
+                        <li>Manish Kumar</li>
+                        <li class="activeRadius">Manish Kumar</li>
+                    </ul>
+            </li>
+            <li>Contact <i class="fa-solid fa-caret-down"></i></li>
+            <li>Gallary <i class="fa-solid fa-caret-down"></i></li>
+            <li>Login <i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+    </header>
+</body>
+>>>>>>> 728d0ef4761837c2a0b43d5ee7164e0c473d32dd
 </html>
