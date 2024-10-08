@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Design in html and css</title>
+    <style>
+        .ListContainer{
+            width: 300px;
+            border-radius: 10px;
+            border-bottom: 8px solid #fe6347;
+            box-shadow: 3px 3px 15px black;
+            margin: 10px;
+            float: left;
+        }
+        .ListContainer h1{
+            margin: 0px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            padding: 15px 5px;
+            background-color: #fe6347;
+            color: white;
+        }
+        .ListContainer ul{
+            list-style-type:decimal;
+            margin: 0px;
+            margin-bottom: 40px;
+            list-style-position: inside;
+            padding-left:0px ;
+            padding: 8px;
+            font-size: 20px;
+
+        }
+        .ListContainer ul li{
+            padding: 10px 8px;
+        }
+        .listColor{
+            background-color: #edeeed;
+            border-top:2px solid #dfe2df ;
+            border-bottom:2px solid #dfe2df ;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="ListContainer">
+        <h1 style=" background-color: #fe6347;">Ordered List</h1>
+        <ul>
+            <li>Information Gathering</li>
+            <li class="listColor">Planning</li>
+            <li>Design</li>
+            <li class="listColor">Development</li>
+            <li>Testing & Deployment</li>
+            <li class="listColor">Maintenance</li>
+        </ul>
+    </div>
+    <div class="ListContainer" style="border-bottom: 8px solid #f6b614;">
+        <h1 style="background-color: #f6b614;">Unordered List</h1>
+        <ul>
+            <li>Information Gathering</li>
+            <li class="listColor">Planning</li>
+            <li>Design</li>
+            <li class="listColor">Development</li>
+            <li>Testing & Deployment</li>
+            <li class="listColor">Maintenance</li>
+        </ul>
+    </div>
+    <div class="ListContainer" style="border-bottom: 8px solid #60bde8;">
+        <h1 style=" background-color: #60bde8;">Description List</h1>
+        <ul>
+            <li>Information Gathering</li>
+            <li class="listColor">Planning</li>
+            <li>Design</li>
+            <li class="listColor">Development</li>
+            <li>Testing & Deployment</li>
+            <li class="listColor">Maintenance</li>
+        </ul>
+    </div>
+</body>
+</html>
