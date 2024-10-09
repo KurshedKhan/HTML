@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            padding: 0em;
+            margin: 0em;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #05215f;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+
+        .header-flex {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+
+        header h4 {
+            width:18em;
+            font-size: 1.4em;
+            color: white;
+        }
+
+        .header-text ul {
+            width: 35em;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1em;
+            color: white;        }
+
+        .header-text1 ul {
+            width: 5em;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.3em;
+            color: white;
+        }
+
+       
+        .page1 {
+            /*background-image: url(iceman\ backgrouind.jpg);*/
+            max-width: 100%;
+            height: 49em;
+           
+        }
+        .page1 img{
+            width: 100%;
+        }
+        .container1 {
+            height: 18em;
+            width: 51em;
+            margin-left: 17em;
+            background-color: white;
+            position: absolute;
+            top: -14em;
+            left: -5%;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.103);
+            animation-name: sub-box1;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            position: relative;
+            animation-direction: reverse;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        @keyframes sub-box1 {
+            from {
+                bottom: 15em;
+            }
+
+            to {
+                top: 5em;
+            }
+        }
+
+        .container1 h3 {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.733);
+            padding-top: 1em;
+        }
+
+        .container1 span {
+            font-size: 4.5em;
+            color: rgba(7, 19, 129, 0.459);
+            letter-spacing: 1px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 1em 2.5em;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            border: none;
+            color: white;
+            font-weight: 500;
+            background-color: #05215f;
+            cursor: pointer;
+        }
+
+        .button-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.8em;
+        }
+
+        .box1 {
+            border: 2px solid red;
+            height: 33em;
+            width: 23em;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            position: relative;
+            left: 5em;
+            top: -5em;
+        }
+        .menu-icon{
+            display: none;
+        }
+        @media screen and (max-width: 576px) {
+            .header-flex{
+                background-color: red;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+            .header-text{
+                display: none;
+            }
+            .header-flex h4 {
+                font-size: 0.7em;
+            }
+            .header-text1{
+                display: none;
+            }
+            .menu-icon{
+                display: block;
+                color: white;
+            }
+            @media screen and (max-width :992px ) {
+                .header-text ul{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <h4>
+                JAMES CONSULTING
+            </h4>
+           
+            <div class="header-text">
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Services</li>
+                    <li> Plan & Pricing</li>
+                    <li>Tools & Tips</li>
+                    <li> Contact</li>
+                </ul>
+            </div>
+            <div class="header-text1">
+                <ul>
+                    <li><i class="bi bi-person-circle"></i></li>
+                    <li>Log In</li>
+                </ul>
+            </div>
+            <div class="menu-icon">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+    <div class="page1">
+        <img src="boy-img.jpg" alt="boy image">
+    </div>
+    <div class="container1">
+        <h3>Developing Innovative Strategies</h3>
+        <span>ACHIEVING GROWTH</span>
+        <div class="button-flex">
+            <button>
+                Free Consultation
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
