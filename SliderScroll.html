@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Scrolling</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .slider{
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.526);
+            width: 70%;
+            height: 80%;
+            overflow: hidden;
+        }
+        .slider input[type="radio"]{
+            display: none;
+        }
+        .slider .slides{
+            height: 90%;
+            width: 500%;
+            max-width: 100%;
+            display: flex;
+            transition:transform 0.5s;
+        }
+        .slider .slides .slide{
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .label-dots{
+            text-align: center;
+            margin: 10px;
+        }
+        .label-dot{
+            position: relative;
+            border: 2px solid red;
+            border-radius: 50%;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+        }
+        input#slide1:checked ~ .label-dots label[for="slide1"]{
+            background-color: red;
+        }
+        input#slide2:checked ~ .label-dots label[for="slide2"]{
+            background-color: red;
+        }
+        input#slide3:checked ~ .label-dots label[for="slide3"]{
+            background-color: red;
+        }
+        input#slide4:checked ~ .label-dots label[for="slide4"]{
+            background-color: red;
+        }
+        input#slide5:checked ~ .label-dots label[for="slide5"]{
+            background-color: red;
+        }
+        .slide-red{
+            background-color: red;
+        }
+        .slide-blue{
+            background-color:blue;
+        }
+        .slide-green{
+            background-color:green;
+        }
+        .slide-yellow{
+            background-color: yellow;
+        }
+        .slide-purple{
+            background-color: purple;
+        }
+
+        input#slide1:checked ~ .slides{
+            transform: translateX(0%);
+        }
+        input#slide2:checked ~ .slides{
+            transform: translateX(-100%);
+        }
+        input#slide3:checked ~ .slides{
+            transform: translateX(-200%);
+        }
+        input#slide4:checked ~ .slides{
+            transform: translateX(-300%);
+        }
+        input#slide5:checked ~ .slides{
+            transform: translateX(-400%);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" name="slide" id="slide1">
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+
+        <div class="slides">
+                <div class="slide slide-red">
+                        
+                </div>
+                <div class="slide slide-blue">
+                    
+                </div>
+                <div class="slide slide-yellow">
+                    
+                </div>
+                <div class="slide slide-purple">
+                     
+                </div>
+                <div class="slide slide-green">
+                    
+                </div>
+
+            
+        </div>
+        <div class="label-dots">
+            <label for="slide1" class="label-dot"></label>
+            <label for="slide2" class="label-dot"></label>
+            <label for="slide3" class="label-dot"></label>
+            <label for="slide4" class="label-dot"></label>
+            <label for="slide5" class="label-dot"></label>
+    </div>
+        
+    </div>
+</body>
+</html>
