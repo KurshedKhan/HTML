@@ -13,18 +13,18 @@ header{
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-header img{
+header>.left-side-content-header>img{
     height:3.2rem;
 }
-header>ul{
+header>.left-side-content-header>ul{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width: 35%;
     font-size: 1rem;
 }
-header>ul>li{
+header>.left-side-content-header>ul>li{
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,26 +33,26 @@ header>ul>li{
     padding: 1.2rem;
     font-size: 0.85rem;
 }
-header>ul>li:hover{
+header>.left-side-content-header>ul>li:hover{
     background-color: #04ac6c;
 }
-header .search-bar{
+header>.left-side-content-header>.search-bar{
     background-color: white;
     border-radius:5rem;
     width: 180px;
     padding: 0.6rem;
     display: flex;
 }
-header .search-bar input[type="text"]{
+header>.left-side-content-header>.search-bar input[type="text"]{
     padding-left:8px ;
     border: none;
     outline: none;
     width: 90%;
 }
-header .search-bar .fa-magnifying-glass{
+header>.left-side-content-header>.search-bar .fa-magnifying-glass{
     color: black;
 }
-header .toggle-button{
+header>.left-side-content-header>.toggle-button{
     width: 35px;
     height: 35px;
     display: flex;
@@ -62,11 +62,12 @@ header .toggle-button{
     border-radius: 50%;
     margin-left: 10px;
     transform: rotateZ(180deg);
+
 }
-header .toggle-button:hover{
+header>.left-side-content-header>.toggle-button:hover{
     background-color: rgba(128, 128, 128, 0.466);
 }
-header .code-box{
+header>.code-box-login-button>.code-box{
     width: fit-content;
     height: 40px;
     display: flex;
@@ -85,4 +86,69 @@ header .code-box .fa-code{
 header .code-box .bi-cart3{
     color: #8c5fe7;
     font-size: 1.2rem;
+}
+.login-button{
+    width:10rem;
+    height: 2.5rem;
+    border-radius: 30px;
+    background-color: #d9eee1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-button div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 30px;
+}
+.login-button div#SignUp{
+    background-color: #04aa6d;
+}
+.login-button div#LogIn{
+    color: black;
+    width: 80%;
+}
+.login-button:hover{
+    background-color:#059862;
+}
+.login-button div#LogIn:hover{
+    color: white;
+}
+.code-box-login-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 27rem;
+}
+header>.left-side-content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:720px;
+}
+
+@media screen and (max-width:1150px){
+    #box1{
+        display: none;
+    }
+    .code-box-login-button{
+        width:20rem ;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    #box2{
+        display: none;
+    }
+    .code-box-login-button{
+        width: fit-content;
+    }
+}
+@media screen and (max-width:910px) {
+    #Certified{
+        display: none;
+    }
 }
