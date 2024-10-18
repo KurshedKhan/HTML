@@ -23,6 +23,7 @@ header>.left-side-content-header>ul{
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
+
 }
 header>.left-side-content-header>ul>li{
     width: 100%;
@@ -150,5 +151,14 @@ header>.left-side-content-header{
 @media screen and (max-width:910px) {
     #Certified{
         display: none;
+    }
+}
+@media screen and (max-width:780px) {
+    #search-Box{
+        display: none;
+    }
+    .left-side-content-header{
+        width:100px;
+        border: 2px solid red;
     }
 }
