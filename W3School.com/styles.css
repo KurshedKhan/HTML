@@ -14,6 +14,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 header>.left-side-content-header>img{
     height:3.2rem;
@@ -130,7 +131,12 @@ header>.left-side-content-header{
     justify-content: space-between;
     width:720px;
 }
-
+#magnifying-glass{
+    display: none;
+}
+#menubar{
+    display: none;
+}
 @media screen and (max-width:1150px){
     #box1{
         display: none;
@@ -159,6 +165,61 @@ header>.left-side-content-header{
     }
     .left-side-content-header{
         width:100px;
-        border: 2px solid red;
     }
+    #magnifying-glass{
+        display:block;
+    }
+    #tutorial,#service,#exercise,#Certified{
+        display: none;
+    }
+    #menubar{
+        display: block;
+    }
+}
+@media screen and (max-width:576px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #search-Box{
+        display:block;
+    }
+    #magnifying-glass{
+        display:none;
+    }
+    header>.left-side-content-header>.search-bar{
+        background-color: white;
+        border-radius:5rem;
+        width: 180px;
+        padding: 0.6rem;
+        display: flex;
+    }
+    header>.left-side-content-header>.search-bar input[type="text"]{
+        padding-left:8px ;
+        border: none;
+        outline: none;
+        width: 80%;
+    }
+    #SignUp{
+        display: none;
+    }
+    .login-button {
+        width:70px;
+
+    }
+}
+input[type="checkbox"]{
+    display: none;
+}
+.tutorials{
+    position: absolute;
+    border: 2px solid red;
+    width: 100%;
+    height: 85vh;
+    top: 60;
+    left: -100%;
+}
+#check:checked ~ div>ul>label[for="check"]>li.tutorials{
+    left: 10%;
 }

@@ -20,21 +20,27 @@
   </head>
   <body>
     <header>
+      <input type="checkbox" id="check">
       <div class="left-side-content-header">
         <img src="/Images/W3SchoolLogo.png" alt="W3School Logo Image" />
         <ul>
-          <li>Tutorials&nbsp;<i class="fa-solid fa-caret-down"></i></li>
-          <li>Exercises&nbsp;<i class="fa-solid fa-caret-down"></i></li>
+          <li id="menubar">Menu&nbsp;<i class="fa-solid fa-caret-down"></i></li>
+          <label for="check">
+            <li id="tutorial">Tutorials&nbsp;<i class="fa-solid fa-caret-down"></i></li>
+          </label>
+          <li id="exercise">Exercises&nbsp;<i class="fa-solid fa-caret-down"></i></li>
           <li id="Certified">Certificates&nbsp;<i class="fa-solid fa-caret-down"></i></li>
-          <li>Services&nbsp;<i class="fa-solid fa-caret-down"></i></li>
+          <li id="service">Services&nbsp;<i class="fa-solid fa-caret-down"></i></li>
         </ul>
         <div class="search-bar" id="search-Box">
           <input type="text" placeholder="Search..." />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i>
         <div class="toggle-button">
           <i class="fa-solid fa-circle-half-stroke"></i>
         </div>
+     
       </div>
       <div class="code-box-login-button">
         <div id="box1" class="code-box">
@@ -49,5 +55,8 @@
         </div>
       </div>
     </header>
+    <div class="tutorials">
+
+    </div>
   </body>
 </html>
