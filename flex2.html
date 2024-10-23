@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex part second</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .col {
+        border: 2px solid blue;
+        height:100%;
+        width: 100%;
+        margin-right: 10px;
+      }
+      .main-container{
+        border: 2px solid green;
+      }
+      .main-container h1{
+        text-align: center;
+      }
+      .ml-10{
+        margin-left: 10px;
+      }
+      .col img{
+        width: 100%;
+        height: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Ajay Responsive Card</h1>
+      <div class="container">
+        <div class="col ml-10">
+            <img src="hunter-house.jpeg" alt="">
+        </div>
+        <div class="col">
+            <img src="hunter-house.jpeg" alt="">
+        </div>
+        <div class="col">
+            <img src="hunter-house.jpeg" alt="">
+        </div>
+      </div>
+      <h1>Hunter House</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .container{
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 9px #ff00ff40;
+        }
+        .d-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            width: 100%;
+            height: 100%;
+            background-color: #00ffff;
+        }
+        .box2{
+            width: 100%;
+            height: 100%;
+            background-color: #ff00ff80;
+        }
+        .box3{
+            width: 100%;
+            height: 100%;
+            background-color: #ffff0080;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                display: block;
+            }
+            .box1{
+                padding: 10px;
+                font-size: 10px;
+            }
+            .box2{
+                padding: 10px;
+                color: white;
+                font-size: 10px;
+            }
+            .box3{
+                padding: 10px;
+                font-size: 10px;
+            }
+        }
+        .container-p{
+            border: 2px solid red;
+            display: none;
+            width: 100%;
+            background-color: green;
+            color: white;
+            text-align: center;
+            height: fit-content;
+            padding: 5px;
+        }
+        @media screen and (min-width:576px) and (max-width:992Px){
+          .container{
+            display: none;
+          }
+          .container-p{
+            display: block;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 d-flex">Hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cumque est aliquam quo laboriosam similique dolore natus tempore sint maxime. Maiores, tempore accusamus officia iusto excepturi quis rerum sit fugiat?</div>
+        <div class="box2 d-flex">Hi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cumque est aliquam quo laboriosam similique dolore natus tempore sint maxime. Maiores, tempore accusamus officia iusto excepturi quis rerum sit fugiat?</div>
+        <div class="box3 d-flex">Hey Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cumque est aliquam quo laboriosam similique dolore natus tempore sint maxime. Maiores, tempore accusamus officia iusto excepturi quis rerum sit fugiat?</div>
+    </div>
+    <div class="container-p">
+        Header
+    </div>
+</body>
+</html>
