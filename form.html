@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form in html</title>
     <style>
-        input[type="checkbox"]{
-            height: 40px;
-            width: 40px;
+        .form-mini-container{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.6rem;
+        }
+        input{
+            padding: 0.5rem;
+        }
+        form[name="myForm"]{
+            border: 2px solid red;
+            width:25%;
+            padding: 0.4rem;
+        }
+        input[type="submit"]{
+            padding: 0.5rem;
+
+        }
+        .form-submit{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding-left: 0.65rem;
         }
     </style>
-</head>
-<body>
-    <form action="">
-        <input type="checkbox">
+  </head>
+  <body>
+    <form name="myForm" action="" method="">
+        <div class="form-mini-container">
+            <label for="name">User Name</label>
+            <input type="text" id="name" required />
+        </div>
+        <div class="form-mini-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-mini-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-mini-container">
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female
+        </div>
+        <div>
+            <select name="language" id="" >
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Gujrati">Gujrati</option>
+                <option value="Rajasthani">Rajasthani</option>
+                <option value="Punjabi">Punjabi</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="">language</label><br>
+            <input type="checkbox">Hindi
+            <input type="checkbox">English
+        </div><br>
+        <div class="form-submit">
+            <input type="submit" value="Submit">
+            <button type="reset">Reset</button>
+        </div>
+
     </form>
-</body>
+  </body>
 </html>

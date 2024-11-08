@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form2 in HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #34b0e4;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .container1{
+        width: 25%;
+        height: 70%;
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.61);
+        padding: 27px;
+        border-radius: 3px;
+      }
+      form[name="myForm"] .text-part{
+        display: flex;
+        border: 2px solid #34b0e4;
+      }
+      form[name="myForm"] .text-part .text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+      form[name="myForm"] .text-part .textBgBlue{
+        background-color: #34b0e4;
+        color: white;
+      }
+      form[name="myForm"] .btn-part{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+      }
+      form[name="myForm"] .btn-part .btn{
+        width:100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        color: white;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        border-radius: 3px;
+      }
+      .btn1{
+        background-color: #5ba4d0;
+      }
+      .btn2{
+        background-color: #d4843d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <form name="myForm" action="" method="">
+        <div class="text-part">
+            <div class="text">
+                <span>SIGN IN</span>
+            </div>
+            <div class="text textBgBlue">
+                <span>SIGN UP</span>
+            </div>
+        </div>
+        <div class="btn-part">
+            <div class="btn btn1">
+               <span>f</span>
+            </div>
+            <div class="btn btn2">
+                <span>G</span>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="container1">
+      <form name="myForm" action="" method=""></form>
+    </div>
+  </body>
+</html>
