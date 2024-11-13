@@ -3,103 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider in html</title>
+    <title>Slider in CSS</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             display: flex;
-            margin: 0;
             align-items: center;
             justify-content: center;
+            margin: 0;
             height: 100vh;
         }
+
         .slider{
-            height: 400px;
-            border: 2px solid red;
-            width: 70%;
-            max-width: 800px;
-            overflow: hidden;
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            height: 60%;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.447);
         }
         input[type="radio"]{
             display: none;
         }
-        .nav-dot{
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border: 2px solid red;
-            border-radius: 50%;
+        .label-more{
+            position: absolute;
+            bottom: 10px;
+            left: 42%;
         }
-        
+        .label-circle{
+            width: 15px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 50%;
+            display: inline-block;
+            
+        }
+
+        input#slide1:checked ~ .label-more label[for="slide1"]{
+            background-color: red;
+        }
+        input#slide2:checked ~ .label-more label[for="slide2"]{
+            background-color: red;
+        }
+        input#slide3:checked ~ .label-more label[for="slide3"]{
+            background-color: red;
+        }
+        input#slide4:checked ~ .label-more label[for="slide4"]{
+            background-color: red;
+        }
+        input#slide5:checked ~ .label-more label[for="slide5"]{
+            background-color: red;
+        }
         .slides{
             border: 2px solid red;
-            height: 90%;
-            width: 500%;
-            display: flex;
-            transition: transform 0.5s all;
+            height: 100%;
         }
-        .slide{
-            border: 5px solid green;
-            min-width:100%;
-            box-sizing: border-box;
-        }
-        #slide1:checked ~ .slides{
-            transform: translateX(0%);
-        }
-        #slide2:checked ~ .slides{
-            transform: translateX(100%);
-        }
-        #slide3:checked ~ .slides{
-            transform: translateX(200%);
-        }
-        #slide4:checked ~ .slides{
-            transform: translateX(300%);
-        }
-        #slide5:checked ~ .slides{
-            transform: translateX(400%);
-        }
-   
-        #slide1:checked ~ .navigation-dot>label[for="slide1"]{
-            background-color: red;
-        }
-        #slide2:checked ~ .navigation-dot>label[for="slide2"]{
-            background-color: red;
-        }
-        #slide3:checked ~ .navigation-dot>label[for="slide3"]{
-            background-color: red;
-        }
-        #slide4:checked ~ .navigation-dot>label[for="slide4"]{
-            background-color: red;
-        }
-        #slide5:checked ~ .navigation-dot>label[for="slide5"]{
-            background-color: red;
-        }
-
-
-       
     </style>
 </head>
 <body>
     <div class="slider">
-        <input type="radio" id="slide1" name="slide">
-        <input type="radio" id="slide2" name="slide">
-        <input type="radio" id="slide3" name="slide">
-        <input type="radio" id="slide4" name="slide">
-        <input type="radio" id="slide5" name="slide">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
 
         <div class="slides">
-            <div class="slide" style="background-color: red;"></div>
-            <div class="slide" style="background-color: green;"></div>
-            <div class="slide" style="background-color: yellow;"></div>
-            <div class="slide" style="background-color:orange;"></div>
-            <div class="slide" style="background-color: purple;"></div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
         </div>
 
-        <div class="navigation-dot">
-            <label for="slide1" class="nav-dot"></label>
-            <label for="slide2" class="nav-dot"></label>
-            <label for="slide3" class="nav-dot"></label>
-            <label for="slide4" class="nav-dot"></label>
-            <label for="slide5" class="nav-dot"></label>
+        <div class="label-more">
+            <label for="slide1" class="label-circle"></label>
+            <label for="slide2" class="label-circle"></label>
+            <label for="slide3" class="label-circle"></label>
+            <label for="slide4" class="label-circle"></label>
+            <label for="slide5" class="label-circle"></label>
         </div>
     </div>
 </body>
