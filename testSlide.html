@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Slider</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        /* Slider container */
+        .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+
+        /* Slides */
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 500%;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Radio buttons for navigation */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Navigation dots */
+        .navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input#slide1:checked ~ .slides {
+            transform: translateX(0);
+        }
+
+        input#slide2:checked ~ .slides {
+            transform: translateX(-100%);
+        }
+
+        input#slide3:checked ~ .slides {
+            transform: translateX(-200%);
+        }
+
+        input#slide4:checked ~ .slides {
+            transform: translateX(-300%);
+        }
+
+        input#slide5:checked ~ .slides {
+            transform: translateX(-400%);
+        }
+
+        /* Active dot styling */
+        input#slide1:checked ~ .navigation label[for="slide1"],
+        input#slide2:checked ~ .navigation label[for="slide2"],
+        input#slide3:checked ~ .navigation label[for="slide3"],
+        input#slide4:checked ~ .navigation label[for="slide4"],
+        input#slide5:checked ~ .navigation label[for="slide5"] {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+
+        <div class="slides">
+            <div class="slide">
+                <img src="taj Mahal.jpeg" alt="Slide 1" style="width:100%;">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x300?text=Slide+2" alt="Slide 2" style="width:100%;">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x300?text=Slide+3" alt="Slide 3" style="width:100%;">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x300?text=Slide+4" alt="Slide 4" style="width:100%;">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x300?text=Slide+5" alt="Slide 5" style="width:100%;">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="slide1" class="nav-dot"></label>
+            <label for="slide2" class="nav-dot"></label>
+            <label for="slide3" class="nav-dot"></label>
+            <label for="slide4" class="nav-dot"></label>
+            <label for="slide5" class="nav-dot"></label>
+        </div>
+    </div>
+</body>
+</html>

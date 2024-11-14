@@ -22,6 +22,8 @@
             max-width: 600px;
             height: 60%;
             box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.447);
+            border-radius: 5px;
+            overflow: hidden;
         }
         input[type="radio"]{
             display: none;
@@ -29,35 +31,87 @@
         .label-more{
             position: absolute;
             bottom: 10px;
-            left: 42%;
+            left: 45%;
         }
         .label-circle{
-            width: 15px;
-            height: 15px;
-            border: 1px solid red;
+            width: 13px;
+            height: 13px;
+            border: 1px solid black;
             border-radius: 50%;
             display: inline-block;
             
         }
-
+        .slides{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.5s all;
+        }
+        .slide{
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide-1-img{
+            background-image: url("golden-temple-guru-nanak.jpg");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .slide-2-img{
+            background-image: url("taj\ Mahal.jpeg");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .slide-3-img{
+            background-image: url("birla-mandir.jpg");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .slide-4-img{
+            background-image: url("hawa-mahal.webp");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .slide-5-img{
+            background-image: url("albert-hall-museum.jpg");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         input#slide1:checked ~ .label-more label[for="slide1"]{
-            background-color: red;
+            background-color: black;
         }
         input#slide2:checked ~ .label-more label[for="slide2"]{
-            background-color: red;
+            background-color: black;
         }
         input#slide3:checked ~ .label-more label[for="slide3"]{
-            background-color: red;
+            background-color: black;
         }
         input#slide4:checked ~ .label-more label[for="slide4"]{
-            background-color: red;
+            background-color: black;
         }
         input#slide5:checked ~ .label-more label[for="slide5"]{
-            background-color: red;
+            background-color: black;
         }
-        .slides{
-            border: 2px solid red;
-            height: 100%;
+      
+
+        input#slide1:checked ~ .slides{
+            transform: translateX(0);
+        }
+        input#slide2:checked ~ .slides{
+            transform: translateX(-100%);
+        }
+        input#slide3:checked ~ .slides{
+            transform: translateX(-200%);
+        }
+        input#slide4:checked ~ .slides{
+            transform: translateX(-300%);
+        }
+        input#slide5:checked ~ .slides{
+            transform: translateX(-400%);
         }
     </style>
 </head>
@@ -70,11 +124,19 @@
         <input type="radio" name="slider" id="slide5">
 
         <div class="slides">
-            <div class="slide">
-                <img src="" alt="">
+            <div class="slide slide-1-img">
+            </div>
+            <div class="slide slide-2-img">
+            </div>
+            <div class="slide slide-3-img">
+            </div>
+            <div class="slide slide-4-img">
+            </div>
+            <div class="slide slide-5-img">
             </div>
         </div>
 
+        
         <div class="label-more">
             <label for="slide1" class="label-circle"></label>
             <label for="slide2" class="label-circle"></label>
