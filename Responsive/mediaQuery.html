@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query in css</title>
+    <style>
+        :root{
+            --second-color:green;
+            --aayush-size:10px;
+        }
+        .container{
+            border: 2px solid red;
+            width: fit-content;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:450px){
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+                
+            }
+            .container{
+                width: 100%;
+                font-size:var(--aayush-size);
+                text-align: center;
+                background-color: var(--second-color);
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Website</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar in html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        aside{
+            width: 250px;
+            height:100%;
+            display: none;
+            overflow-y: scroll;
+            padding: 10px;
+            text-align: justify;
+            scrollbar-width: thin;
+        }
+        input#check{
+            display: none;
+        }
+        label[for="check"] i.fa-circle-xmark{
+            position:absolute;
+            top: 15px;
+            left: 200px;
+            display: none;
+        }
+        label[for="check"] i.fa-bars{
+            margin: 10px;
+        }
+        input#check:checked ~ aside{
+            display: block;
+        }
+        input#check:checked ~ label[for="check"] i.fa-bars{
+            display: none;
+        }
+        input#check:checked ~ label[for="check"] i.fa-circle-xmark{
+            display: block;
+        }
+        aside h1{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-circle-xmark"></i>
+    </label>
+    <aside>
+        <h1>Menu Bar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam fugiat, dolore sequi recusandae beatae consequatur velit id animi quisquam dolorum aperiam aliquid accusamus ut, libero ullam voluptas eum. Illo laboriosam beatae doloribus voluptatibus quis voluptatum? Deleniti laborum ipsum quisquam officiis rem sit autem dolorem, sunt non, rerum modi! Praesentium quos, possimus veritatis laudantium earum, laborum, voluptatem dolorum debitis a cupiditate dolorem! Hic officiis numquam temporibus magni iste, in, impedit ipsa ratione, necessitatibus incidunt animi quas? Veniam facere minus, eos, quia ad totam nulla vel reprehenderit amet vitae quasi ut reiciendis. Eum veritatis quod labore nihil ad nisi excepturi dolore aut rerum accusantium nemo error dignissimos natus, consequuntur ratione quo exercitationem voluptatibus rem. Fugit eligendi repellat veniam saepe, quidem dolorem expedita at, obcaecati repudiandae commodi non, ipsam sed. Quam dicta nemo voluptatum ducimus maxime veniam doloremque ea sed? Accusamus ducimus, deleniti vero quibusdam repellendus mollitia nihil pariatur fugit odit aliquid alias, quod ipsa explicabo voluptate obcaecati veritatis maiores accusantium facere blanditiis repudiandae dolor? Dolorem, facilis esse sunt est, hic maxime fuga cumque alias ipsam doloribus sequi accusantium temporibus consectetur expedita illo inventore nobis incidunt, deserunt dignissimos nemo animi dolorum iure vero neque. Explicabo earum beatae ipsa minus quaerat, exercitationem cum quisquam esse nobis inventore, fuga atque quia eaque! Ratione tempora voluptas, pariatur eos fugit deleniti voluptatibus fuga, quos distinctio quod quia sapiente cumque voluptatum quaerat possimus unde asperiores quae enim neque id commodi placeat quis eaque inventore! Voluptatibus debitis eaque iure aut molestiae vero quae libero iusto neque enim molestias numquam velit, ex vitae architecto officia repudiandae. Minima, facere sed? Magni facere quod ab, odit possimus velit reiciendis. Possimus iusto, voluptates hic ad nemo perspiciatis ut, cumque repellat nesciunt numquam asperiores consequuntur harum alias dolorem eos, animi accusamus eaque? Quaerat voluptas quia minima autem, quod illo voluptate, ex facere dolorem ullam ut! Magni ullam, cupiditate facere at, asperiores nam soluta perspiciatis velit omnis sunt voluptatibus quia esse consequatur laudantium! Velit, neque quo. Officia assumenda, ad cumque nobis quos nemo nihil minima quis ipsum ducimus debitis amet provident quaerat. Maiores amet modi id perspiciatis nulla! Voluptates voluptas totam, velit repudiandae adipisci vitae, magnam id et sit tempora ipsam distinctio enim ullam voluptatum consequatur! Corrupti laborum dolorem enim officia exercitationem magni et iusto aperiam, ratione odio itaque quaerat vel amet a repellat nulla voluptate, deleniti laboriosam nemo qui possimus, molestiae dolorum doloremque cumque. Deserunt qui natus minima ratione sed repudiandae dicta quisquam nihil officiis totam voluptatibus dolor dolores incidunt voluptates exercitationem eaque architecto atque explicabo, ea, quia, ut odit tempore sint facilis! Sapiente cumque deleniti corporis laboriosam vel! Ratione possimus id quod at atque. Ipsam laboriosam libero, voluptate commodi voluptatem, quaerat doloremque distinctio veritatis ratione facere dolore sunt eos dolorum eveniet consequatur voluptatum soluta fugit voluptates quisquam debitis tempore! Sequi, illum. Quis nemo magnam placeat nulla maxime nihil, enim quaerat repellendus, quod tempora deleniti nostrum officia, odit totam doloremque obcaecati! Dolor nobis sint qui quas cupiditate modi id dignissimos minus. Laborum, aspernatur vel. Magni fugit earum vel facilis repellat a aperiam quaerat.</p>
+    </aside>
+</body>
+</html>
