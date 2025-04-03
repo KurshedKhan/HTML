@@ -46,12 +46,6 @@ h1 {
 }
 ```
 
-## Commonly Used CSS Properties
-- **Color & Background:** `color`, `background-color`
-- **Text Styling:** `font-size`, `font-family`, `text-align`
-- **Box Model:** `margin`, `padding`, `border`
-- **Layout & Positioning:** `display`, `position`, `flex`, `grid`
-
 ## CSS Selectors
 1. **Universal Selector (`*`)**
    ```css
@@ -84,30 +78,6 @@ h1 {
        color: red;
    }
    ```
-
-## Responsive Design Basics
-- **Media Queries:**
-  ```css
-  @media (max-width: 600px) {
-      body {
-          background-color: yellow;
-      }
-  }
-  ```
-- **Flexbox:**
-  ```css
-  .container {
-      display: flex;
-      justify-content: center;
-  }
-  ```
-- **Grid Layout:**
-  ```css
-  .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-  }
-  ```
 
 ## Conclusion
 CSS is a crucial technology for web design and layout control. It helps style HTML, create responsive pages, and enhance user experience.

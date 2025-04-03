@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="styles.css">
   <!-- internal CSS -->
   <style>
+    *{
+      margin: 0;
+      padding: 0px;
+    }
     span{
       border: 2px solid red;
     }
@@ -23,12 +27,21 @@
     #bg{
       background-color: red;
     }
+    .group,.group1{
+      border: 2px solid blue;
+    }
+    .group{
+      background-color: yellow;
+    }
+    .group1{
+      background-color: green;
+    }
   </style>
 </head>
 <body>
   <!-- inline css -->
   <h1 style="border:2px solid red;color:white;background-color:red;">CSS Full Form</h1>
-  <p style="border: 2px solid blue;background-color:yellow;">Cascading Style Sheet</p>
+  <p style="border: 2px solid blue;background-color:yellow;margin:18px;">Cascading Style Sheet</p>
   <span class="demo bg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aliquam.</span>
   <br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quibusdam.</span>
   <br><span class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quibusdam.</span>
@@ -36,5 +49,8 @@
   <div>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur error dolor quam facilis eligendi, tenetur, at rerum exercitationem hic praesentium quod reprehenderit minus est voluptatem fugiat, a soluta quia veritatis?
   </div>
+
+  <p class="group">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quidem.</p>
+  <span class="group1">Lorem ipsum dolor sit amet.</span>
 </body>
 </html>
