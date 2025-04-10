@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Desing in html and css</title>
+  <style>
+    :root{
+      --body-color:#c4d3f2;
+      --table-header:#6f7cd5;
+      --padding-10:10px;
+    }
+    body{
+      background-color: var(--body-color);
+    }
+    table{
+      border-collapse: collapse;
+      width: 800px;
+      margin: 80px 200px;
+    }
+    table thead tr th{
+      background-color: #6f7cd5;
+      color: white;
+      padding:var(--padding-10);
+      text-align: left;
+    }
+    table tbody tr td{
+      background-color: white;
+      color: black;
+      padding:var(--padding-10);
+    }
+    .thead_pad_left{
+      border-radius: 7px 0px 0px 0px;
+    }
+    .thead_pad_right{
+      border-radius: 0px 7px 0px 0px;
+    }
+    .tbody_pad_left{
+      border-radius: 0px 0px 0px 7px;
+    }
+    .tbody_pad_right{
+      border-radius: 0px 0px 7px 0px;
+    }
+    caption{
+      font-size: 40px;
+      color:var(--table-header);
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Student Reconds ( Tech Innnovation )</caption>
+    <thead>
+      <tr>
+        <th class="thead_pad_left">Full Name</th>
+        <th>Age</th>
+        <th>Job Title</th>
+        <th class="thead_pad_right">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Washington</td>
+      </tr>
+      <tr>
+        <td class="tbody_pad_left">Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td class="tbody_pad_right">Washington</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
