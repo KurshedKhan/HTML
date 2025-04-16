@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector in html and css</title>
+  <style>
+    .box{
+      border: 2px solid red;
+    }
+    .box > div > p{
+      background-color: green;
+      padding: 10px;
+      color: white;
+    }
+    .box > div + p{
+      background-color: brown;
+      padding: 10px;
+      color: white;
+    }
+    .box > div + p:hover{
+      background-color: pink;
+      color: black;
+      cursor: pointer;
+    }
+    button{
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+    button:hover{
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+
+    ul li:nth-last-child(3){
+      color: red;
+      background-color:yellow;
+    }
+    .box> h2 + p::first-line{
+      color: green;
+      background-color: black;
+    }
+    ul > li::before{
+      content: "😁";
+    }
+    ul > li::after{
+      content: "😡";
+      position: relative;
+      left: -5px;
+      top: -5px;
+    }
+    h2::first-letter{
+      font-family: 30px;
+      color: red;
+    }
+    ::selection{
+      background-color: red;
+      color: white;
+    }
+    li::marker{
+      color: red;
+      font-size: 20px;
+    }
+    input[type="text"]{
+      border: 2px solid red;
+      outline: none;
+    }
+    input:focus{
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>HTML</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto aliquam corporis perferendis? Illum doloremque quos atque quaerat labore corporis, odit alias adipisci consequuntur at. Accusamus sequi vero iusto animi inventore, saepe ratione. Explicabo sit culpa repellendus? Inventore magnam labore, nemo reprehenderit ipsa eaque dolor at maiores animi minima repudiandae ad iure quis laudantium vero similique illo. Necessitatibus aut facere reiciendis veritatis aspernatur consequuntur cumque corrupti, voluptates quis blanditiis asperiores quibusdam expedita suscipit non adipisci. Repellendus excepturi est praesentium ad consequuntur id itaque inventore, enim fugiat error sapiente debitis architecto ea soluta? Quasi laudantium at eos, ea cum provident repudiandae.</p>
+    <div>
+      <p> 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repudiandae!</p>
+    </div>
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum.</p>
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum.</p>
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum.</p>
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum.</p>
+    <span>Hyper text markup languges</span>
+  </div>
+
+  <button>submit</button>
+
+  <ul>
+    <li>mohan</li>
+    <li>sohan</li>
+    <li>Riya</li>
+    <li>Priya</li>
+  </ul>
+
+  <input type="text">
+</body>
+</html>
