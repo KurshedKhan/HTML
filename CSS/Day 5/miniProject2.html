@@ -20,7 +20,6 @@
       margin: 10px;
       border-radius: 9px;
       box-shadow: 3px 3px 9px #b7bdc1;
-      float: left;
     }
     .card h1{
       text-align: center;
@@ -66,7 +65,11 @@
       background:linear-gradient(90deg ,rgb(55, 55, 55),rgb(155, 155, 155),rgb(55,55,55)) ;
       text-align: center;
       font-size: 30px;
-      margin-bottom: 30px;
+    }
+    .container{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
     }
   </style>
 </head>
@@ -74,38 +77,40 @@
   <header>
     <h1>Lists in HTML</h1>
   </header>
-  <div class="card border-1" style="margin-left: 150px;">
-    <h1 class="card_1">Ordered List</h1>
-    <ol>
-      <li>Information Gathering</li>
-      <li class="colorSet">Planning</li>
-      <li>Desing</li>
-      <li class="colorSet">Development</li>
-      <li>Testing & Deployment</li>
-      <li class="colorSet">Maintenance</li>
-    </ol>
-  </div>
-  <div class="card border-2">
-    <h1 class="card_2">Unordered List</h1>
-    <ol>
-      <li>Information Gathering</li>
-      <li class="colorSet">Planning</li>
-      <li>Desing</li>
-      <li class="colorSet">Development</li>
-      <li>Testing & Deployment</li>
-      <li class="colorSet">Maintenance</li>
-    </ol>
-  </div>
-  <div class="card border-3">
-    <h1 class="card_3">Ordered List</h1>
-    <ol>
-      <li>Information Gathering</li>
-      <li class="colorSet">Planning</li>
-      <li>Desing</li>
-      <li class="colorSet">Development</li>
-      <li>Testing & Deployment</li>
-      <li class="colorSet">Maintenance</li>
-    </ol>
+  <div class="container">
+    <div class="card border-1">
+      <h1 class="card_1">Ordered List</h1>
+      <ol>
+        <li>Information Gathering</li>
+        <li class="colorSet">Planning</li>
+        <li>Desing</li>
+        <li class="colorSet">Development</li>
+        <li>Testing & Deployment</li>
+        <li class="colorSet">Maintenance</li>
+      </ol>
+    </div>
+    <div class="card border-2">
+      <h1 class="card_2">Unordered List</h1>
+      <ol>
+        <li>Information Gathering</li>
+        <li class="colorSet">Planning</li>
+        <li>Desing</li>
+        <li class="colorSet">Development</li>
+        <li>Testing & Deployment</li>
+        <li class="colorSet">Maintenance</li>
+      </ol>
+    </div>
+    <div class="card border-3">
+      <h1 class="card_3">Ordered List</h1>
+      <ol>
+        <li>Information Gathering</li>
+        <li class="colorSet">Planning</li>
+        <li>Desing</li>
+        <li class="colorSet">Development</li>
+        <li>Testing & Deployment</li>
+        <li class="colorSet">Maintenance</li>
+      </ol>
+    </div>
   </div>
 </body>
 </html>

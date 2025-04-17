@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+    }
+    header{
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.619);
+      background: linear-gradient(90deg ,rgb(221, 219, 219),gray,rgb(221,219,219));
+    }
+    .website-name{
+      width: 170px;
+      display:flex;
+      justify-content: space-around;
+    }
+    .website-name p{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header > ul {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header > ul > li{
+      border: 2px solid black;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    header ul li:hover{
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+    header .website-name p:first-child::first-letter{
+      color: red;
+      font-size: 30px;
+    }
+    header .website-name p:last-child:first-letter{
+      color:blue;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="website-name">
+      <p>Tech</p>
+      <p>Innovation</p>
+    </div>
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact</li>
+      <li>Gallery</li>
+      <li>Services</li>
+    </ul>
+  </header>
+</body>
+</html>
