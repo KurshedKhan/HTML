@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family:Josefin Sans;
+}
+header{
+  background-color: rgb(0,0,0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header .webName-logo{
+  color: white;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .webName-logo img{
+  height: 50px;
+}
+header .webName-logo p{
+  font-weight: bold;
+}
+header ul{
+  color: white;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+header ul li:first-child{
+  text-decoration: underline;
+}
+header ul li:last-child{
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: rgb(255,135,12);
+  color: black;
+}
+header ul li:hover{
+  text-decoration: underline;
+}
+
+section{
+  height: 600px;
+  background-image: url("K:/Web Development 2025/CSS/Day 9/Project1/Images/imageProxy.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .transparent{
+  height: 100%;
+  background-color: rgba(4, 67, 138, 0.52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .transparent .content{
+  width: 50%;
+  color: white;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+section .transparent .content h1{
+  font-size: 50px;
+}
+section .transparent .content h3{
+  font-size: 25px;
+  font-weight:500;
+}
+section .transparent .content p{
+  text-align: center;
+  line-height: 25px;
+}
+section .transparent .content button{
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  outline: none;
+}
