@@ -160,3 +160,38 @@ section .transparent .content button{
 .images .imgs img:nth-child(4){
   margin-right: 0px;
 }
+
+footer{
+  background-color: black;
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+footer .webName-logo{
+  color: white;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .webName-logo img{
+  height: 50px;
+}
+footer .webName-logo p{
+  font-weight: bold;
+}
+footer .footer_text{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.footer_logo{
+  text-align: center;
+}
+.footer_contact{
+  text-align: center;
+  line-height: 30px;
+}
