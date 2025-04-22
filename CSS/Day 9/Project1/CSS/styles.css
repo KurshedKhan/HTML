@@ -46,7 +46,9 @@ header ul li:last-child{
 header ul li:hover{
   text-decoration: underline;
 }
-
+header ul li a{
+  color: white;
+}
 .section1{
   height: 600px;
   background-image: url("K:/Web Development 2025/CSS/Day 9/Project1/Images/imageProxy.webp");
@@ -194,4 +196,61 @@ footer .footer_text{
 .footer_contact{
   text-align: center;
   line-height: 30px;
+}
+section.contact{
+  padding: 60px 55px;
+}
+section.contact h1{
+  text-align: center;
+  font-size: 32px;
+}
+section.contact p{
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 25px;
+}
+
+.firstlastname{
+  display: flex;
+}
+.firstlastname .firstname{
+  width: 50%;
+}
+.firstlastname .secondname{
+  width: 50%;
+}
+
+.firstlastname input[type="text"]{
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.email{
+  margin: 10px 0px;
+}
+.email input[type="email"]{
+  width: 97.7%;
+  padding: 10px;
+  margin-top: 5px;
+  outline: none;
+}
+.textarea textarea{
+  margin-top: 5px;
+  outline: none;
+  width: 97.7%;
+}
+.submit{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: right;
+  padding-right: 25px;
+}
+.submit button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #5D2F00;
+  color: white;
 }
