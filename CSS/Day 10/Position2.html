@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position absolute</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container{
+      height: 300px;
+      width: 300px;
+      background-color: green;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .box{
+      height: 150px;
+      width: 150px;
+    }
+    .box:nth-child(1){
+      position: absolute;
+      top: -70px;
+      left: -70px;
+      background-color: red;
+      border-radius: 50%;
+    }
+    .box:nth-child(2){
+      position: absolute;
+      top: -70px;
+      right: -70px;
+      background-color:yellow;
+      border-radius: 50%;
+    }
+    .box:nth-child(3){
+      position: absolute;
+      bottom: -70px;
+      left: -70px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+    .box:nth-child(4){
+      position: absolute;
+      bottom: -70px;
+      right: -70px;
+      background-color: black;
+      border-radius: 50%;
+    }
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
