@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images Manipulation in css</title>
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      border: 2px solid red;
+      width: 80%;
+      max-width: 800px;
+      height: 300px;
+      position: relative;
+    }
+    img{
+      height: 300px;
+      width: 800px;
+      object-fit:cover;
+      object-position: 50% 20%;
+    }
+    .box{
+      height:150px;
+      width: 400px;
+      background:transparent;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="nature-images.webp" alt="">
+    <div class="box">
+     
+    </div>
+  </div>
+</body>
+</html>
