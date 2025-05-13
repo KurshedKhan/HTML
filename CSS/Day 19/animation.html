@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation in css </title>
+  <style>
+    .box{
+      height: 100px;
+      width: 100px;
+      border: 2px solid red;
+      animation-name:myanimation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+    }
+    @keyframes myanimation {
+    0%{
+      transform:rotate(0deg);
+      border-radius: 50%;
+      left: 0%;
+    }
+    25%{
+       transform:rotate(90deg);
+       border-radius: 50%;
+       left: 25%;
+    }
+    50%{
+      transform:rotate(180deg);
+      border-radius: 50%;
+      left: 50%;
+    }
+    75%{
+      transform:rotate(90deg);
+      border-radius: 50%;
+      left: 25%;
+    }
+    100%{
+      transform: rotate(0deg);
+      border-radius: 50%;
+      left: 0%;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Box 1
+  </div>
+</body>
+</html>
