@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color:rgba(128, 128, 128, 0.731);
+}
+button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  position: relative;
+  margin-right: 10px;
+}
+button::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0px;
+  background-color: black;
+  height: 5px;
+  transition: width 1s linear;
+}
+button:hover::before{
+  width: 100%;
+}

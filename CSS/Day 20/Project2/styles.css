@@ -1,0 +1,36 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.boxContainer{
+  height:100vh;
+  width: 200px;
+  border: 2px solid red;
+  background-color: green;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#check{
+  visibility: hidden;
+}
+#check:checked ~ .boxContainer{
+  display: block;
+}
+.bi-list{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.bi-x-circle{
+  position: absolute;
+  left: 170px;
+  top: 10px;
+  z-index: 1;
+  display: none;
+}
+#check:checked ~ label .bi-x-circle{
+  display: block;
+}
