@@ -1,6 +1,4 @@
-# HTML Full Syllabus
-
-## 📌 Introduction to HTML
+# 📌 Introduction to HTML
 ### 📖 What is HTML?
 HTML (HyperText Markup Language) is the standard language for creating web pages. It structures web content using elements such as headings, paragraphs, links, images, and more. It works alongside CSS for styling and JavaScript for interactivity.
 
